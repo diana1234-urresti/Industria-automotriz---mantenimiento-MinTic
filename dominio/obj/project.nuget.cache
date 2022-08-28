@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fNuB8EgidGQdcAeZRRhB12f7xsJuNvRW0KrYN5qfMl0jLrOhYuNE5SoDX1bWlsGT/u7BqMZLT2blkIi6NQEzSg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\MANTENIMIENTO_TIC\\dominio\\dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kdelg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\kdelg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

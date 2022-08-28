@@ -1,0 +1,9 @@
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\bin\Debug\netstandard2.0\dominio.deps.json
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\bin\Debug\netstandard2.0\dominio.dll
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\bin\Debug\netstandard2.0\dominio.pdb
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\obj\Debug\netstandard2.0\dominio.csprojAssemblyReference.cache
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\obj\Debug\netstandard2.0\dominio.AssemblyInfoInputs.cache
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\obj\Debug\netstandard2.0\dominio.AssemblyInfo.cs
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\obj\Debug\netstandard2.0\dominio.csproj.CoreCompileInputs.cache
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\obj\Debug\netstandard2.0\dominio.dll
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\dominio\obj\Debug\netstandard2.0\dominio.pdb
