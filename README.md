@@ -1,1 +1,0 @@
-# Industria-automotriz---mantenimiento-MinTic

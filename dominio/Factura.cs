@@ -9,6 +9,7 @@ namespace dominio
         public double CostoRevision {get;set;}
         public double CostoRepuesto {get;set;}
         public double Iva {get;set;}
+        public double Subtotal {get;set;}
         
     }
 }
