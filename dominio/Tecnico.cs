@@ -6,5 +6,6 @@ namespace dominio
     {
         public int Id {get;set;}
         public double Sueldo {get;set;}
+        
     }
 }

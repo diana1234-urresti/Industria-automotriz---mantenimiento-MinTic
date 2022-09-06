@@ -8,6 +8,6 @@ namespace dominio
         public string Ciudad {get;set;}
         public string FechaIngreso {get;set;}
         public string TipoVehiculo {get;set;}
-        public int IdCliente {get;set;}
+        
     }
 }
