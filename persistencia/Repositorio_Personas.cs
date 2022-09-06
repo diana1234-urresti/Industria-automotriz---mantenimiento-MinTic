@@ -39,6 +39,9 @@ namespace persistencia
          var PersonaEncontrada=_applicationContext.persona.FirstOrDefault(p=>p.Id==persona.Id);
          if (PersonaEncontrada!=null){
             PersonaEncontrada.Nombre=persona.Nombre;
+            PersonaEncontrada.Apellido=persona.Apellido;
+            PersonaEncontrada.Direccion=persona.Direccion;
+            PersonaEncontrada.Email=persona.Email;
          }
          _applicationContext.SaveChanges();
          return PersonaEncontrada;
