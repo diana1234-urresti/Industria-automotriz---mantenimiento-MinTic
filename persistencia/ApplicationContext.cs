@@ -6,7 +6,7 @@ namespace persistencia
 {
     public class ApplicationContext: DbContext
     {
-        private const string connectionString = @"Data Source=localhost;Initial Catalog=Mantenimiento_Tic;Integrated Security=True;";
+        private const string connectionString = @"Data Source=localhost\sqlexpress;Initial Catalog=Mantenimiento_Tic;Integrated Security=True;";
         public DbSet<Cliente> cliente {get; set;}
         public DbSet<Factura> factura {get; set;}
         public DbSet<Ingreso> ingreso {get; set;}

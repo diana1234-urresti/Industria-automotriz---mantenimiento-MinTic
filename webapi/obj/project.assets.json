@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\kdelg\\.nuget\\packages\\": {}
+    "C:\\Users\\Solarte\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\MANTENIMIENTO_TIC\\webapi\\webapi.csproj",
+      "projectUniqueName": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\MANTENIMIENTO_TIC\\webapi\\webapi.csproj",
-      "packagesPath": "C:\\Users\\kdelg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\MANTENIMIENTO_TIC\\webapi\\obj\\",
+      "projectPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\webapi\\webapi.csproj",
+      "packagesPath": "C:\\Users\\Solarte\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kdelg\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Solarte\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
