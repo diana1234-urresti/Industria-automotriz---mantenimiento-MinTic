@@ -1,0 +1,29 @@
+﻿@page
+@model MyApp.Namespace.listarModelclientes
+@{
+}
+
+<div class="justify-content-center text-center">
+    <h1>Lista de Clientes</h1>
+    <br>
+</div>
+<div>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>CUIDAD</th>
+            <th>FECHA DE INGRESO</th>
+            <th>TIPO DE VEHICULO</th>
+            
+        </tr>
+        @foreach(var cliente in Model.Clientes){
+            <tr>
+                <td>@cliente.Id</td>
+                <td>@cliente.Ciudad</td>
+                <td>@cliente.FechaIngreso</td>
+                <td>@cliente.TipoVehiculo</td>
+                
+            </tr>
+        }
+    </table>
+</div>

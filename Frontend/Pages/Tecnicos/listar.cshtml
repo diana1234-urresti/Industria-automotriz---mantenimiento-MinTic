@@ -1,0 +1,22 @@
+﻿@page
+@model MyApp.Namespace.listarModeltecnicos
+@{
+}
+<div class="justify-content-center text-center">
+    <h1>Lista de Tecnicos</h1>
+    <br>
+</div>
+<div>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>SUELDO</th>
+        </tr>
+        @foreach(var tecnico in Model.tecnicos){
+            <tr>
+                <td>@tecnico.Id</td>
+                <td>@tecnico.Sueldo</td>
+            </tr>
+        }
+    </table>
+</div>
