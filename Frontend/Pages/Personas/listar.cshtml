@@ -8,6 +8,10 @@
     <br>
 </div>
 <div>
+<div>
+<a asp-page="Crear">Crear nueva persona</a>
+</div>
+    <br>
     <table class="table">
         <tr>
             <th>ID</th>
@@ -15,6 +19,9 @@
             <th>APELLIDOS</th>
             <th>DIRECCION</th>
             <th>CORREO E</th>
+            <th>DETALLES</th>
+            <th>ACTUALIZAR</th>
+            <th>ELIMINAR</th>
         </tr>
         @foreach(var persona in Model.Personas){
             <tr>
@@ -23,6 +30,15 @@
                 <td>@persona.Apellido</td>
                 <td>@persona.Direccion</td>
                 <td>@persona.Email</td>
+                <td>
+                 <a asp-page="Detalles">Detalles</a>   
+                </td>
+                <td>
+                 <a asp-page="Actualizar">Actualizar</a>   
+                </td>
+                <td>
+                 <a asp-page="Eliminar">Eliminar</a>   
+                </td>
             </tr>
         }
     </table>
