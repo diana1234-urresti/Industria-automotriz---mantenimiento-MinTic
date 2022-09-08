@@ -12,7 +12,7 @@ namespace aplicacion
         {
             Persona p1 =new Persona();
             p1.Nombre="Camila";
-            p1.Apellido="Romero";
+            p1.Apellido="fff";
             p1.Direccion="dssff";
             p1.Email="rttttt";
             _repo.Add(p1);
