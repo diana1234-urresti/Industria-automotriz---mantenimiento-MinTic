@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
+    <header><center><img alt="Logo" src="/images/Imagen.png"/></center>
          <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" >
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Inicio</a>
@@ -30,6 +30,15 @@
                          <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Tecnicos/listar">Gestion Tecnicos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Facturas/listar">Gestion Facturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Revisiones/listar">Gestion Revisiones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Repuestos/listar">Gestion Repuestos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -37,6 +46,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            
              @RenderBody()
            
         </main>
