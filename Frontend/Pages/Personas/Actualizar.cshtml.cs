@@ -4,13 +4,32 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using persistencia;
+using dominio;
 
 namespace MyApp.Namespace
 {
     public class ActualizarModel : PageModel
     {
-        public void OnGet()
+         private readonly IRepositorio_Personas _repo_personas;
+        
+        public Persona Personas { get; set; }
+
+        public ActualizarModel(IRepositorio_Personas Repositorio_Personas)
         {
+          _repo_personas = Repositorio_Personas;   
+        }
+        
+        public void OnGet(int id)
+        {
+          Personas = _repo_personas.Get(id);
+        }
+
+         public IActionResult OnPost(Persona Personas)
+        {
+              _repo_personas.Update(Personas);
+               return new RedirectToPageResult("listar");
+            
         }
     }
 }

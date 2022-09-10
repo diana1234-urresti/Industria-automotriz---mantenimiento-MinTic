@@ -12,6 +12,6 @@ namespace persistencia
         IEnumerable<Persona> GetAll();
         Persona Update(Persona persona);
         void Delete (int Id);
-        Persona Get(Persona persona); 
+        Persona Get(int Idpersona); 
     }
 }

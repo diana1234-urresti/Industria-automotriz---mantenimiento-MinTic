@@ -10,15 +10,15 @@ C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANT
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\persistencia\obj\Debug\netstandard2.1\persistencia.csproj.CopyComplete
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\persistencia\obj\Debug\netstandard2.1\persistencia.dll
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\MANTENIMIENTO_TIC\persistencia\obj\Debug\netstandard2.1\persistencia.pdb
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.csprojAssemblyReference.cache
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.AssemblyInfoInputs.cache
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.AssemblyInfo.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.csproj.CoreCompileInputs.cache
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\bin\Debug\netstandard2.1\persistencia.deps.json
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\bin\Debug\netstandard2.1\persistencia.dll
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\bin\Debug\netstandard2.1\persistencia.pdb
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\bin\Debug\netstandard2.1\dominio.dll
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\bin\Debug\netstandard2.1\dominio.pdb
-C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.csprojAssemblyReference.cache
-C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.AssemblyInfoInputs.cache
-C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.AssemblyInfo.cs
-C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.csproj.CoreCompileInputs.cache
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.csproj.CopyComplete
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.dll
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\persistencia\obj\Debug\netstandard2.1\persistencia.pdb

@@ -12,7 +12,6 @@ namespace persistencia
 
        public Repositorio_Personas(ApplicationContext applicationContext){
         _applicationContext= applicationContext;
-        
        }
        
        public Repositorio_Personas(){}
@@ -26,18 +25,17 @@ namespace persistencia
 
         IEnumerable<Persona> IRepositorio_Personas.GetAll(){
             return _applicationContext.persona;
-
         }
 
-        Persona IRepositorio_Personas.Get(Persona persona){
-         return _applicationContext.persona.FirstOrDefault(p=>p.Id==persona.Id);
-         
-
+        Persona IRepositorio_Personas.Get(int Idpersona){
+         return _applicationContext.persona.FirstOrDefault(
+            p => p.Id == Idpersona );         
         } 
 
         Persona IRepositorio_Personas.Update(Persona persona){
-         var PersonaEncontrada=_applicationContext.persona.FirstOrDefault(p=>p.Id==persona.Id);
-         if (PersonaEncontrada!=null){
+         var PersonaEncontrada = _applicationContext.persona.FirstOrDefault(
+            p => p.Id == persona.Id);
+         if (PersonaEncontrada != null){
             PersonaEncontrada.Nombre=persona.Nombre;
             PersonaEncontrada.Apellido=persona.Apellido;
             PersonaEncontrada.Direccion=persona.Direccion;
@@ -47,10 +45,11 @@ namespace persistencia
          return PersonaEncontrada;
         }
 
-        void IRepositorio_Personas.Delete (int idPersona){
+        void IRepositorio_Personas.Delete(int Idpersona){
 
-        var PersonaEncontrada=_applicationContext.persona.FirstOrDefault(p=>p.Id==idPersona);
-        if (PersonaEncontrada==null)
+        var PersonaEncontrada=_applicationContext.persona.FirstOrDefault(
+            p => p.Id ==  Idpersona);
+        if (PersonaEncontrada == null)
         return;
         _applicationContext.Remove(PersonaEncontrada);
         _applicationContext.SaveChanges();
