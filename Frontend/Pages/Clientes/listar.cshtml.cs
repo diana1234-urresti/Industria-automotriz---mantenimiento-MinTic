@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,23 +9,21 @@ using persistencia;
 
 namespace MyApp.Namespace
 {
-    public class listarModelclientes : PageModel
+    public class listarclienteModel : PageModel
     {
-
-    private readonly IRepositorio_cliente _repo_cliente;
+        private readonly IRepositorio_cliente _repo_clientes;
+        
         public IEnumerable<Cliente> Clientes { get ; set ; }
        
-        public listarModelclientes(IRepositorio_cliente Repositorio_cliente)
+        public listarclienteModel(IRepositorio_cliente Repositorio_cliente)
         {
-            _repo_cliente = Repositorio_cliente;
+            _repo_clientes = Repositorio_cliente;
         }
+
         public void OnGet()
         {
-            Clientes = _repo_cliente.GetAll();
-           foreach (var cliente in Clientes)
-           {
-              Console.WriteLine(cliente.Ciudad);   
-           }
+           Clientes = _repo_clientes.GetAll();
+                    
         }
     }
 }

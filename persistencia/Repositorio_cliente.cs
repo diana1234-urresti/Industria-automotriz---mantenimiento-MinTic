@@ -29,8 +29,8 @@ namespace persistencia
 
         }
 
-        Cliente IRepositorio_cliente.Get(Cliente clientes){
-         return _applicationContext.cliente.FirstOrDefault(p=>p.Id==clientes.Id);
+        Cliente IRepositorio_cliente.Get(int Idcliente){
+         return _applicationContext.cliente.FirstOrDefault(p=>p.Id==Idcliente);
          
 
         } 

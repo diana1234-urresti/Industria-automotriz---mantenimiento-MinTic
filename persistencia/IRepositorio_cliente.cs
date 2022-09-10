@@ -12,6 +12,6 @@ namespace persistencia
         IEnumerable<Cliente> GetAll();
         Cliente Update (Cliente clientes);
         void Delete (int Id);
-        Cliente Get(Cliente clientes); 
+        Cliente Get(int Idcliente); 
     }
 }

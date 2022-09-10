@@ -1,0 +1,54 @@
+﻿@page
+@model MyApp.Namespace.CrearclienteModel
+@{
+}
+<div class="justify-content-center text-center">
+    <h1>Crear Cliente</h1>
+    <br>
+    <hr>
+ </div>
+<form method="post">
+  <table class="table-hover" width="600" height="300"  align="center" >
+    <tr>
+      <td width="260">Ciudad</td>
+      <td width="340">
+       <input asp-for="Clientes.Ciudad" class="form-control" size="35" />
+      </td>
+    </tr>
+    <tr>
+      <td width="260">Fecha de Ingreso</td>
+      <td width="340">
+        <input asp-for="Clientes.FechaIngreso" class="form-control" size="35" />
+      </td>
+    <tr>
+      <td width="260">Tipo de vehiculo</td>
+      <td width="340">
+        <input asp-for="Clientes.TipoVehiculo" class="form-control" size="35" />
+      </td>
+    </tr>
+    <tr>
+      <td width="260">Campo adional 1</td>
+      <td width="340">
+        <input asp-for"Personas.campo" class="form-control" size="35" />
+      </td>
+    </tr>  
+    <tr>
+      <td width="260">Campo adional 2</td>
+      <td width="340">
+        <input asp-for"Personas.campo2" class="form-control" size="35" />
+      </td>
+    </tr>
+    <tr>
+      <td width="260">Campo adional 3</td>
+      <td width="340">
+        <input asp-for"Personas.campo3" class="form-control" size="35" />
+      </td>
+    </tr>
+    </table>
+    <br>
+    <div class="justify-content-center text-center">
+      <input type="submit"  class="btn btn-success" name="Submit" value="Enviar Datos" />
+    </div>
+    <hr>
+ </form>
+
