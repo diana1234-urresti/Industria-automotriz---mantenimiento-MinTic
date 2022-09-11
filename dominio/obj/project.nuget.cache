@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vbt6RjrKVxA5emwlvv3pWW1IWe2qFKOfvG6R9akev08uaDo6BOZZBJjO3vPsMKwsBbOLuUZhJzTZw/+pK4We4w==",
+  "dgSpecHash": "y9BIgTruRb3tYyZyMJPhtT+0Elp6J/wbyT8r0gKDc3XQ4Ofbqfsk4akt+P1En2EFn5tPLzz+XN/zsrtivhECRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
+  "projectFilePath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA\\Industria-automotriz---mantenimiento-MinTic-1\\dominio\\dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Solarte\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Solarte\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\kdelg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\kdelg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

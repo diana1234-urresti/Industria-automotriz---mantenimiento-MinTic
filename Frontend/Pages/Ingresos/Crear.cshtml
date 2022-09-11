@@ -1,0 +1,36 @@
+@page
+@model MyApp.Namespace.CrearIngresoModel
+@{
+}
+<div class="justify-content-center text-center">
+    <h1>Crear Nuevo Ingreso</h1>
+    <br>
+    <hr>
+ </div>
+<form method="post">
+  <table class="table-hover" width="600" height="300"  align="center" >
+    <tr>
+      <td width="260">Nombre de Usuario</td>
+      <td width="340">
+       <input asp-for="Ingresos.NameUsuario" class="form-control" size="35" />
+      </td>
+    </tr>
+    <tr>
+      <td width="260">Contraseña</td>
+      <td width="340">
+        <input asp-for="Ingresos.Contraseña" class="form-control" size="35" />
+      </td>
+    <tr>
+      <td width="260">Tipo de Usuario</td>
+      <td width="340">
+        <input asp-for="Ingresos.TipoUsuario" class="form-control" size="35" />
+      </td>
+    </tr>
+   
+    </table>
+    <br>
+    <div class="justify-content-center text-center">
+      <input type="submit"  class="btn btn-success" name="Submit" value="Enviar Datos" />
+    </div>
+    <hr>
+ </form>

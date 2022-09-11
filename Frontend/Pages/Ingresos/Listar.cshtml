@@ -1,0 +1,43 @@
+@page
+@model MyApp.Namespace.ListarIngresoModel
+@{
+}
+
+<div class="justify-content-center text-center">
+  <h1>Lista de Ingresos</h1>
+    <br>
+</div>
+<div>
+<div>
+<a asp-page="Crear"><button type="button" class="btn btn-success">Crear nueva Ingreso</button></a>
+</div>
+    <br>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Nombre de Usuario</th>
+            <th>Contraseña</th>
+            <th>Tipo de Usuario</th>
+            <th>DETALLES</th>
+            <th>ACTUALIZAR</th>
+            <th>ELIMINAR</th>
+        </tr>
+        @foreach(var ingreso in Model.Ingresos){
+            <tr>
+                <td>@ingreso.Id</td>
+                <td>@ingreso.NameUsuario</td>
+                <td>@ingreso.Contraseña</td>
+                <td>@ingreso.TipoUsuario</td>
+                <td>
+                <a asp-page="./Detalles" asp-route-id="@ingreso.Id"><button type="button" class="btn btn-info">Detalles</button></a>   
+                </td>
+                <td>
+                 <a asp-page="./Actualizar" asp-route-id="@ingreso.Id"><button type="button" class="btn btn-primary">Actualizar</button></a>   
+                </td>
+                <td>
+                 <a asp-page="./Eliminar" asp-route-id="@ingreso.Id"><button type="button" class="btn btn-danger">Eliminar</button></a>   
+                </td>
+            </tr>
+        }
+    </table>
+</div>

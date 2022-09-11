@@ -1,0 +1,39 @@
+@page
+@model MyApp.Namespace.ActualizarRevisionModel
+@{
+}
+<div class="justify-content-center text-center">
+    <h1>Actualizar Datos de la Revision</h1>
+    <br>
+    <hr>
+    <form method="post">
+
+        <div class="container">
+        <div class="row">
+    <div class="col" ><strong>Numero de Revision</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Revisiones.NoRevision)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Placa de Vehiculo</strong></div>
+    <div class="col"> @Html.TextBoxFor(m => m.Revisiones.NoPlaca)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Tipo de Mantenimiento</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Revisiones.TipoMantenimiento)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Fecha de Revision</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Revisiones.FechaRevision)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Estado del Filtro</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Revisiones.EstadoFiltro)</div>
+    <div class="w-100"></div>
+    <div class="col"><strong>Repuesto</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Revisiones.Repuesto)</div>
+    <div class="w-100"></div>
+    <div class="col"><strong>Estado del Aceite</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Revisiones.EstadoAceite)</div>
+  </div><br>
+    <hr>
+    <input type="hidden"  asp-for="Revisiones"/>    
+    <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
+    </form>
+</div>
+ <div class="justify-content-center text-left"><a asp-page="./Listar">Ir a Gestion de Revisiones</a></div>

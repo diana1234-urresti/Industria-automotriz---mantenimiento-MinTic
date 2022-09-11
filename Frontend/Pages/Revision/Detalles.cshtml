@@ -1,0 +1,33 @@
+@page
+@model MyApp.Namespace.DetallesRevisionModel
+@{
+}
+<div class="justify-content-center text-center">
+    <h1>Detalle Factura</h1>
+    <br>
+    <hr><br>
+    <div class="container">
+         <div class="row">
+    <div class="col" ><strong>Numero de Revision</strong></div>
+    <div class="col">@Html.DisplayFor(m => m.Revisiones.NoRevision)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Placa de Vehiculo</strong></div>
+    <div class="col"> @Html.DisplayFor(m => m.Revisiones.NoPlaca)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Tipo de Mantenimiento</strong></div>
+    <div class="col">@Html.DisplayFor(m => m.Revisiones.TipoMantenimiento)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Fecha de Revision</strong></div>
+    <div class="col">@Html.DisplayFor(m => m.Revisiones.FechaRevision)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Estado del Filtro</strong></div>
+    <div class="col">@Html.DisplayFor(m => m.Revisiones.EstadoFiltro)</div>
+    <div class="w-100"></div>
+    <div class="col"><strong>Repuesto</strong></div>
+    <div class="col">@Html.DisplayFor(m => m.Revisiones.Repuesto)</div>
+    <div class="w-100"></div>
+    <div class="col"><strong>Estado del Aceite</strong></div>
+    <div class="col">@Html.DisplayFor(m => m.Revisiones.EstadoAceite)</div>
+  </div><br>
+    <hr>
+    <div class="justify-content-center text-left"><a asp-page="./listar">Ir a Gestion Revisiones</a></div>

@@ -1,0 +1,28 @@
+@page
+@model MyApp.Namespace.ActualizarIngresoModel
+@{
+}
+<div class="justify-content-center text-center">
+    <h1>Actualizar Datos de la Ingreso</h1>
+    <br>
+    <hr>
+    <form method="post">
+
+        <div class="container">
+        <div class="row">
+    <div class="col" ><strong>Nombre de usuario</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Ingresos.NameUsuario)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Contraseña</strong></div>
+    <div class="col"> @Html.TextBoxFor(m => m.Ingresos.Contraseña)</div>
+        <div class="w-100"></div>
+    <div class="col"><strong>Tipo de Usuario</strong></div>
+    <div class="col">@Html.TextBoxFor(m => m.Ingresos.TipoUsuario)</div>
+        <div class="w-100"></div>
+    </div><br>
+    <hr>
+    <input type="hidden"  asp-for="Ingresos"/>    
+    <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
+    </form>
+</div>
+ <div class="justify-content-center text-left"><a asp-page="./Listar">Ir a Gestion de Ingresos</a></div>
