@@ -29,8 +29,8 @@ namespace persistencia
 
         }
 
-        Factura IRepositorio_Factura.Get(Factura factura){
-         return _applicationContext.factura.FirstOrDefault(p=>p.Id==factura.Id);
+        Factura IRepositorio_Factura.Get(int Idfactura){
+         return _applicationContext.factura.FirstOrDefault(p=>p.Id==Idfactura);
          
 
         } 

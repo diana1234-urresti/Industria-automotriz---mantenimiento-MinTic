@@ -12,6 +12,6 @@ namespace persistencia
         IEnumerable<Factura> GetAll();
         Factura Update (Factura facturas);
         void Delete (int Id);
-        Factura Get(Factura facturas); 
+        Factura Get(int Id); 
     }
 }

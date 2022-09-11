@@ -9,8 +9,8 @@ using persistencia;
 namespace persistencia.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20220906030250_persona_cliente_factura_ingreso_repuesto_revision_tecnicos")]
-    partial class persona_cliente_factura_ingreso_repuesto_revision_tecnicos
+    [Migration("20220911174234_personas_carro")]
+    partial class personas_carro
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -70,8 +70,10 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Ingreso", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Contraseña")
                         .HasColumnType("nvarchar(max)");
@@ -84,7 +86,7 @@ namespace persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ingreso");
+                    b.ToTable("ingresos");
                 });
 
             modelBuilder.Entity("dominio.Persona", b =>

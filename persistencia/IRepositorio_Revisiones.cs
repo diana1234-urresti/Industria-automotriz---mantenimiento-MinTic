@@ -12,6 +12,6 @@ namespace persistencia
         IEnumerable<Revision> GetAll();
         Revision Update(Revision revisiones);
         void Delete (int Id);
-        Revision Get(Revision revisiones); 
+        Revision Get(int Id); 
     }
 }

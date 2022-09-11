@@ -29,8 +29,8 @@ namespace persistencia
 
         }
 
-        Revision IRepositorio_Revisiones.Get(Revision revisiones){
-         return _applicationContext.revision.FirstOrDefault(p=>p.Id==revisiones.Id);
+        Revision IRepositorio_Revisiones.Get(int IdRevision){
+         return _applicationContext.revision.FirstOrDefault(p=>p.Id==IdRevision);
          
 
         } 

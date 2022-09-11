@@ -68,8 +68,10 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Ingreso", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Contraseña")
                         .HasColumnType("nvarchar(max)");
@@ -82,7 +84,7 @@ namespace persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ingreso");
+                    b.ToTable("ingresos");
                 });
 
             modelBuilder.Entity("dominio.Persona", b =>
