@@ -201,3 +201,18 @@ C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDU
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic-1\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Detalles.cshtml.g.cs
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic-1\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Eliminar.cshtml.g.cs
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic-1\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Listar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Actualizar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Crear.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Detalles.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Eliminar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Listar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ingresos\Actualizar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ingresos\Crear.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ingresos\Detalles.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ingresos\Eliminar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ingresos\Listar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Actualizar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Crear.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Detalles.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Eliminar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Revision\Listar.cshtml.g.cs
