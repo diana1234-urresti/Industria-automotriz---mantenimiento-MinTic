@@ -1,0 +1,22 @@
+﻿@page
+@model MyApp.Namespace.ActualizartecnicoModel
+@{
+}
+<div class="justify-content-center text-center">
+    <h2>Actualizar Datos del Tecnico</h2>
+    <br>
+    <hr>
+    <form method="post" >
+
+    <div class="container">
+      <div class="row">
+        <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Tecnicos.Sueldo)</strong></div>
+        <div class="col" style="font-size:0.4cm;size:35">@Html.TextBoxFor(m =>m.Tecnicos.Sueldo)</div>
+     </div>
+    <br>
+    <hr>
+    <input type="hidden"  asp-for="Tecnicos"/>    
+    <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
+    </form>
+
+ <div class="justify-content-center text-left"><a asp-page="./listar">Ir a Gestion Tecnicos</a></div>

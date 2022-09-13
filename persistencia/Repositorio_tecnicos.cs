@@ -29,20 +29,20 @@ namespace persistencia
 
         }
 
-        Tecnico IRepositorio_tecnico.Get(Tecnico tecnicos){
-         return _applicationContext.tecnico.FirstOrDefault(p=>p.Id==tecnicos.Id);
+        Tecnico IRepositorio_tecnico.Get(int Idtecnico){
+         return _applicationContext.tecnico.FirstOrDefault(p=>p.Id==Idtecnico);
          
 
         } 
 
-    /*   Tecnico IRepositorio_tecnico.Update(Tecnico tecnicos){
+      /* Tecnico IRepositorio_tecnico.Update(Tecnico tecnicos){
         var tecnicoEncontrado=_applicationContext.tecnico.FirstOrDefault(p=>p.Id==tecnicos.Id);
         if (tecnicoEncontrado!=null){
            tecnicoEncontrado.sueldo=tecnicos.sueldo;
-                    }
+                   
          _applicationContext.SaveChanges();
          return tecnicoEncontrado;
-        } */
+        }  }*/
 
         void IRepositorio_tecnico.Delete (int idtecnico){
 

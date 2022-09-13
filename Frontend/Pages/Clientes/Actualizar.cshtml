@@ -3,24 +3,25 @@
 @{
 }
 <div class="justify-content-center text-center">
-    <h1>Actualizar Datos del Cliente</h1>
+    <h2>Actualizar Datos del Cliente</h2>
     <br>
     <hr>
     <form method="post" >
 
     <div class="container">
       <div class="row">
-        <div class="col"><strong>@Html.DisplayNameFor(m => m.Clientes.Ciudad)</strong></div>
-        <div class="col">@Html.TextBoxFor(m => m.Clientes.Ciudad)</div>
+        <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Clientes.Ciudad)</strong></div>
+        <div class="col" style="font-size:0.4cm;size:35">@Html.TextBoxFor(m => m.Clientes.Ciudad)</div>
      <div class="w-100"></div>
-        <div class="col"><strong>@Html.DisplayNameFor(m => m.Clientes.FechaIngreso)</strong></div>
-        <div class="col"> @Html.TextBoxFor(m => m.Clientes.FechaIngreso)</div>
+        <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Clientes.FechaIngreso)</strong></div>
+        <div class="col" style="font-size:0.4cm;size:35"> @Html.TextBoxFor(m => m.Clientes.FechaIngreso)</div>
     <div class="w-100"></div>
-        <div class="col"><strong> @Html.DisplayNameFor(m => m.Clientes.TipoVehiculo)</strong></div>
-        <div class="col">@Html.TextBoxFor(m => m.Clientes.TipoVehiculo)</div>
+        <div class="col" style="font-size:0.4cm;"><strong> @Html.DisplayNameFor(m => m.Clientes.TipoVehiculo)</strong></div>
+        <div class="col" style="font-size:0.4cm;size:35">@Html.TextBoxFor(m => m.Clientes.TipoVehiculo)</div>
     </div>
     <br>
     <hr>
+    <input type="hidden"  asp-for="Clientes.Id"/>
     <input type="hidden"  asp-for="Clientes"/>    
     <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
     </form>

@@ -32,6 +32,7 @@
     <div class="col">@Html.TextBoxFor(m => m.Revisiones.EstadoAceite)</div>
   </div><br>
     <hr>
+    <input type="hidden"  asp-for="Revisiones.Id"/>
     <input type="hidden"  asp-for="Revisiones"/>    
     <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
     </form>

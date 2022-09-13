@@ -26,6 +26,7 @@
     <div class="col">@Html.TextBoxFor(m => m.Facturas.Total)</div>
   </div><br>
     <hr>
+    <input type="hidden"  asp-for="Facturas.Id"/>
     <input type="hidden"  asp-for="Facturas"/>    
     <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
     </form>

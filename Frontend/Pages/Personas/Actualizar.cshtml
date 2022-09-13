@@ -3,26 +3,27 @@
 @{
 }
 <div class="justify-content-center text-center">
-    <h1>Actualizar Datos de la Persona</h1>
+    <h2>Actualizar Datos de la Persona</h2>
     <br>
     <hr>
     <form method="post" >
 
         <div class="container">
         <div class="row">
-    <div class="col"><strong>@Html.DisplayNameFor(m => m.Personas.Nombre)</strong></div>
-    <div class="col">@Html.TextBoxFor(m => m.Personas.Nombre)</div>
+    <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Personas.Nombre)</strong></div>
+    <div class="col" style="font-size:0.4cm;size 50">@Html.TextBoxFor(m => m.Personas.Nombre)</div>
         <div class="w-100"></div>
-    <div class="col"><strong>@Html.DisplayNameFor(m => m.Personas.Apellido)</strong></div>
-    <div class="col"> @Html.TextBoxFor(m => m.Personas.Apellido)</div>
+    <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Personas.Apellido)</strong></div>
+    <div class="col" style="font-size:0.4cm;size 50"> @Html.TextBoxFor(m => m.Personas.Apellido)</div>
         <div class="w-100"></div>
-    <div class="col"><strong> @Html.DisplayNameFor(m => m.Personas.Direccion)</strong></div>
-    <div class="col">@Html.TextBoxFor(m => m.Personas.Direccion)</div>
+    <div class="col" style="font-size:0.4cm;"><strong> @Html.DisplayNameFor(m => m.Personas.Direccion)</strong></div>
+    <div class="col" style="font-size:0.4cm;size:50">@Html.TextBoxFor(m => m.Personas.Direccion)</div>
         <div class="w-100"></div>
-    <div class="col"><strong>@Html.DisplayNameFor(m => m.Personas.Email)</strong></div>
-    <div class="col">@Html.TextBoxFor(m => m.Personas.Email)</div>
+    <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Personas.Email)</strong></div>
+    <div class="col" style="font-size:0.4cm;size 100">@Html.TextBoxFor(m => m.Personas.Email)</div>
   </div><br>
     <hr>
+    <input type="hidden"  asp-for="Personas.Id"/>
     <input type="hidden"  asp-for="Personas"/>    
     <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
     </form>

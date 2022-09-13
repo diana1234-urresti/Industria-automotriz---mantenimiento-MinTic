@@ -9,21 +9,26 @@ using persistencia;
 
 namespace MyApp.Namespace
 {
-    public class listartecnicoModel : PageModel
+    public class CreartecnicoModel : PageModel
     {
         private readonly IRepositorio_tecnico _repo_tecnicos;
-        
-        public IEnumerable<Tecnico> Tecnicos { get ; set ; }
-       
-        public listartecnicoModel(IRepositorio_tecnico Repositorio_tecnicos)
-        {
+        public Tecnico Tecnicos { get; set; }
+
+         public CreartecnicoModel(IRepositorio_tecnico Repositorio_tecnicos)
+           {
             _repo_tecnicos = Repositorio_tecnicos;
-        }
+            
+           }
+ 
 
         public void OnGet()
         {
-           Tecnicos = _repo_tecnicos.GetAll();
-                    
+        }
+
+         public IActionResult OnPost(Tecnico Tecnicos)
+        {
+            _repo_tecnicos.Add(Tecnicos);
+            return new RedirectToPageResult("/Tecnicos/listar");
         }
     }
 }

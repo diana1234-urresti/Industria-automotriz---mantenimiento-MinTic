@@ -10,8 +10,8 @@ namespace persistencia
     {
         Tecnico Add(Tecnico tecnicos);
         IEnumerable<Tecnico> GetAll();
-   //     Tecnico Update (Tecnico tecnicos);
+     //   Tecnico Update (Tecnico tecnicos);
         void Delete (int Id);
-        Tecnico Get(Tecnico tecnicos); 
+        Tecnico Get(int Idtecnico); 
     }
 }

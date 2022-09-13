@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vbt6RjrKVxA5emwlvv3pWW1IWe2qFKOfvG6R9akev08uaDo6BOZZBJjO3vPsMKwsBbOLuUZhJzTZw/+pK4We4w==",
+  "dgSpecHash": "2034SvpUNao4Ta4qTZcPtKTEnkr4oaEzTm9Ofbatz3ySATVcOA2Eu8TlQz6Jzt4Oi5xiCfl10zBFOrYTt7UFsw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Solarte\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Solarte\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Solarte\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Solarte\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
