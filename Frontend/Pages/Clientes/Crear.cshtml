@@ -8,42 +8,27 @@
     <hr>
  </div>
 <form method="post">
-  <table class="table-hover" width="600" height="300"  align="center" >
+  <table class="table-hover" width="600" height="300"  align="center" asp-validation-summary="ModelOnly" class="text-danger" >
     <tr>
       <td width="260" style="font-size:0.4cm;">Ciudad</td>
       <td width="340">
        <input asp-for="Clientes.Ciudad" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Clientes.Ciudad" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     <tr>
       <td width="260" style="font-size:0.4cm;">Fecha de Ingreso</td>
       <td width="340">
         <input asp-for="Clientes.FechaIngreso" class="form-control" size="35" style="font-size:0.4cm;" />
+        <span asp-validation-for="Clientes.FechaIngreso" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     <tr>
       <td width="260" style="font-size:0.4cm;">Tipo de vehiculo</td>
       <td width="340">
         <input asp-for="Clientes.TipoVehiculo" class="form-control" size="35" style="font-size:0.4cm;" />
+        <span asp-validation-for="Clientes.TipoVehiculo" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
-    </tr>
-    <tr>
-      <td width="260" style="font-size:0.4cm;">Campo adional 1</td>
-      <td width="340">
-        <input asp-for"Personas.campo" class="form-control" size="35" style="font-size:0.4cm;" />
-      </td>
-    </tr>  
-    <tr>
-      <td width="260" style="font-size:0.4cm;">Campo adional 2</td>
-      <td width="340">
-        <input asp-for"Personas.campo2" class="form-control" size="35" style="font-size:0.4cm;" />
-      </td>
-    </tr>
-    <tr>
-      <td width="260" style="font-size:0.4cm;">Campo adional 3</td>
-      <td width="340">
-        <input asp-for"Personas.campo3" class="form-control" size="35" style="font-size:0.4cm;" />
-      </td>
-    </tr>
+     </tr>
     </table>
     <br>
     <div class="justify-content-center text-center">

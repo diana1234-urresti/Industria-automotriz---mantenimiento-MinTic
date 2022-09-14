@@ -6,26 +6,54 @@
     <h2>Actualizar Datos de la Persona</h2>
     <br>
     <hr>
-    <form method="post" >
-
-        <div class="container">
-        <div class="row">
-    <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Personas.Nombre)</strong></div>
-    <div class="col" style="font-size:0.4cm;size 50">@Html.TextBoxFor(m => m.Personas.Nombre)</div>
-        <div class="w-100"></div>
-    <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Personas.Apellido)</strong></div>
-    <div class="col" style="font-size:0.4cm;size 50"> @Html.TextBoxFor(m => m.Personas.Apellido)</div>
-        <div class="w-100"></div>
-    <div class="col" style="font-size:0.4cm;"><strong> @Html.DisplayNameFor(m => m.Personas.Direccion)</strong></div>
-    <div class="col" style="font-size:0.4cm;size:50">@Html.TextBoxFor(m => m.Personas.Direccion)</div>
-        <div class="w-100"></div>
-    <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Personas.Email)</strong></div>
-    <div class="col" style="font-size:0.4cm;size 100">@Html.TextBoxFor(m => m.Personas.Email)</div>
-  </div><br>
-    <hr>
+     <form method="post" >
+          <table class="table-hover" width="600" height="300"  align="center" asp-validation-summary="ModelOnly" class="text-danger" >
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Nombres</td>
+      <td width="340">@Html.TextBoxFor(m => m.Personas.Nombre)
+       <span asp-validation-for="Personas.Nombre" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Apellidos</td>
+      <td width="340">@Html.TextBoxFor(m => m.Personas.Apellido)
+        <span asp-validation-for="Personas.Apellido" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Direccion</td>
+      <td width="340">@Html.TextBoxFor(m => m.Personas.Direccion)
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Corre Electronico</td>
+      <td width="340">@Html.TextBoxFor(m => m.Personas.Email)
+        <span asp-validation-for="Personas.Email" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260"style="font-size:0.4cm;" >Numero de Indentificacion</td>
+      <td width="340">@Html.TextBoxFor(m => m.Personas.Identificacion)
+        <span asp-validation-for="Personas.Identificacion" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>  
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Fecha de Nacimiento</td>
+      <td width="340">@Html.TextBoxFor(m => m.Personas.FechaN)
+        <span asp-validation-for="Personas.FechaN" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Telefono / Celular</td>
+      <td width="340">@Html.TextBoxFor(m => m.Personas.Telefono) 
+        <span asp-validation-for="Personas.Telefono" class="text-danger" style="font-size:0.4cm;"></span>  
+      </td>
+    </tr>
     <input type="hidden"  asp-for="Personas.Id"/>
     <input type="hidden"  asp-for="Personas"/>    
     <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
     </form>
-</div>
+    </table>
+    <br>
+    <hr>
+ </div>
  <div class="justify-content-center text-left"><a asp-page="./listar">Ir a Gestion Personas</a></div>

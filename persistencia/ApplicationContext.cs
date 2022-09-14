@@ -14,6 +14,7 @@ namespace persistencia
         public DbSet<Repuesto> repuesto {get; set;}
         public DbSet<Revision> revision {get; set;}
         public DbSet<Tecnico> tecnico {get; set;}
+        public DbSet<Ingreso> ingreso {get; set;}
 
         public ApplicationContext(){}
 

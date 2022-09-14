@@ -27,6 +27,10 @@ namespace MyApp.Namespace
 
          public IActionResult OnPost(Persona Personas)
         {
+
+           if(!ModelState.IsValid)
+             return Page();
+             
               _repo_personas.Update(Personas);
                return new RedirectToPageResult("listar");
             

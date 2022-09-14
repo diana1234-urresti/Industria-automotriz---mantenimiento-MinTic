@@ -26,9 +26,12 @@ namespace MyApp.Namespace
         }
 
          public IActionResult OnPost(Persona Personas)
-        {
+         {
+            if(!ModelState.IsValid)
+             return Page();
+
             _repo_personas.Add(Personas);
             return new RedirectToPageResult("/Personas/listar");
-        }
+         }
     }
 }

@@ -40,6 +40,9 @@ namespace persistencia
             PersonaEncontrada.Apellido=persona.Apellido;
             PersonaEncontrada.Direccion=persona.Direccion;
             PersonaEncontrada.Email=persona.Email;
+            PersonaEncontrada.Identificacion=persona.Identificacion;
+            PersonaEncontrada.FechaN=persona.FechaN;
+            PersonaEncontrada.Telefono=persona.Telefono;
          }
          _applicationContext.SaveChanges();
          return PersonaEncontrada;

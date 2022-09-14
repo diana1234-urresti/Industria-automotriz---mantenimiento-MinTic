@@ -7,18 +7,20 @@
     <br>
     <hr>
  </div>
-<form method="post" asp-validation-summary="ModelOnly" class="text-danger">
-  <table class="table-hover" width="600" height="300"  align="center" >
+<form method="post">
+  <table class="table-hover" width="600" height="300"  align="center" asp-validation-summary="ModelOnly" class="text-danger" >
     <tr>
       <td width="260" style="font-size:0.4cm;">Nombres</td>
       <td width="340">
-       <input asp-for="Personas.Nombre" class="form-control" size="35" style="font-size:0.4cm;" />
+       <input asp-for="Personas.Nombre" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Personas.Nombre" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     <tr>
       <td width="260" style="font-size:0.4cm;">Apellidos</td>
       <td width="340">
-        <input asp-for="Personas.Apellido" class="form-control" size="35" style="font-size:0.4cm;" />
+        <input asp-for="Personas.Apellido" class="form-control" size="35" style="font-size:0.5cm;" />
+        <span asp-validation-for="Personas.Apellido" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     <tr>
       <td width="260" style="font-size:0.4cm;">Direccion</td>
@@ -30,24 +32,28 @@
       <td width="260" style="font-size:0.4cm;">Corre Electronico</td>
       <td width="340">
         <input asp-for="Personas.Email" class="form-control" size="35"  style="font-size:0.4cm;"/>
+        <span asp-validation-for="Personas.Email" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     <tr>
-      <td width="260"style="font-size:0.4cm;" >Campo adional 1</td>
+      <td width="260"style="font-size:0.4cm;" >Numero de Indentificacion</td>
       <td width="340">
-        <input asp-for"Personas.campo" class="form-control" size="35" style="font-size:0.4cm;" />
+        <input asp-for="Personas.Identificacion" class="form-control" size="35" style="font-size:0.4cm;" />
+        <span asp-validation-for="Personas.Identificacion" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>  
     <tr>
-      <td width="260" style="font-size:0.4cm;">Campo adional 2</td>
+      <td width="260" style="font-size:0.4cm;">Fecha de Nacimiento</td>
       <td width="340">
-        <input asp-for"Personas.campo2" class="form-control" size="35" style="font-size:0.4cm;" />
+        <input asp-for="Personas.FechaN" class="form-control" size="35" style="font-size:0.4cm;" />
+        <span asp-validation-for="Personas.FechaN" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     <tr>
-      <td width="260" style="font-size:0.4cm;">Campo adional 3</td>
+      <td width="260" style="font-size:0.4cm;">Telefono / Celular</td>
       <td width="340">
-        <input asp-for"Personas.campo3" class="form-control" size="35" style="font-size:0.4cm;" />
+        <input asp-for="Personas.Telefono" class="form-control" size="35" style="font-size:0.4cm;" />
+        <span asp-validation-for="Personas.Telefono" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     </table>

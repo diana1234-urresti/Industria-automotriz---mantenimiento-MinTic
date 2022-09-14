@@ -6,24 +6,30 @@
     <h2>Actualizar Datos del Cliente</h2>
     <br>
     <hr>
-    <form method="post" >
-
-    <div class="container">
-      <div class="row">
-        <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Clientes.Ciudad)</strong></div>
-        <div class="col" style="font-size:0.4cm;size:35">@Html.TextBoxFor(m => m.Clientes.Ciudad)</div>
-     <div class="w-100"></div>
-        <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Clientes.FechaIngreso)</strong></div>
-        <div class="col" style="font-size:0.4cm;size:35"> @Html.TextBoxFor(m => m.Clientes.FechaIngreso)</div>
-    <div class="w-100"></div>
-        <div class="col" style="font-size:0.4cm;"><strong> @Html.DisplayNameFor(m => m.Clientes.TipoVehiculo)</strong></div>
-        <div class="col" style="font-size:0.4cm;size:35">@Html.TextBoxFor(m => m.Clientes.TipoVehiculo)</div>
-    </div>
-    <br>
-    <hr>
-    <input type="hidden"  asp-for="Clientes.Id"/>
-    <input type="hidden"  asp-for="Clientes"/>    
-    <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
+   <form method="post">
+    <table class="table-hover" width="600" height="300"  align="center" asp-validation-summary="ModelOnly" class="text-danger" >
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Ciudad</td>
+      <td width="340"> @Html.TextBoxFor(m => m.Clientes.Ciudad)
+       <span asp-validation-for="Clientes.Ciudad" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Fecha de Ingreso</td>
+      <td width="340"> <input asp-for="Clientes.FechaIngreso" class="form-control" size="35" style="font-size:0.4cm;" />
+      <span asp-validation-for="Clientes.FechaIngreso" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Tipo de vehiculo</td>
+      <td width="340">@Html.TextBoxFor(m => m.Clientes.TipoVehiculo)        
+        <span asp-validation-for="Clientes.TipoVehiculo" class="text-danger" style="font-size:0.4cm;"></span>
+        <input type="hidden"  asp-for="Clientes.Id"/>
+        <input type="hidden"  asp-for="Clientes"/>        
     </form>
-
+      </td>
+      <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>
+     </tr>
+    </table>
+ <br>
+    <hr>
  <div class="justify-content-center text-left"><a asp-page="./listar">Ir a Gestion Clientes</a></div>
