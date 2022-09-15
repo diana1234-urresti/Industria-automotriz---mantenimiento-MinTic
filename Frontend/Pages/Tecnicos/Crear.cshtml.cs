@@ -27,6 +27,9 @@ namespace MyApp.Namespace
 
          public IActionResult OnPost(Tecnico Tecnicos)
         {
+             if(!ModelState.IsValid)
+              return Page();
+            
             _repo_tecnicos.Add(Tecnicos);
             return new RedirectToPageResult("/Tecnicos/listar");
         }

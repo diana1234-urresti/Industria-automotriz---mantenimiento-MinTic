@@ -11,7 +11,7 @@ namespace persistencia
         Cliente Add(Cliente clientes);
         IEnumerable<Cliente> GetAll();
         Cliente Update (Cliente clientes);
-        void Delete (int Id);
+        void Delete (int Id_cliente);
         Cliente Get(int Idcliente); 
     }
 }

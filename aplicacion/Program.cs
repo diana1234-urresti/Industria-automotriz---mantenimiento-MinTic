@@ -10,7 +10,7 @@ namespace aplicacion
         private static IRepositorio_cliente _repoc=new Repositorio_cliente(new ApplicationContext());
         static void Main(string[] args)
         {
-            Persona p1 =new Persona();
+          /*  Persona p1 =new Persona();
             p1.Nombre="Camila";
             p1.Apellido="fff";
             p1.Direccion="dssff";
@@ -25,7 +25,7 @@ namespace aplicacion
             _repoc.Add(c1);
             //_repo.Update(p1);
             //_repo.Delete(3);
-            //_repo.GetAll();
+            //_repo.GetAll();*/
             
 
 

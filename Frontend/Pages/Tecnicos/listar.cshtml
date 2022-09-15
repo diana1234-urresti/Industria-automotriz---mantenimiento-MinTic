@@ -23,17 +23,17 @@
         </tr>
         @foreach(var tecnico in Model.Tecnicos){
             <tr>
-                <td>@tecnico.Id</td>
+                <td>@tecnico.Id_tecnico</td>
                 <td>@tecnico.Sueldo</td>
                 <td></td>
                 <td>
-                <a asp-page="./Detalles" asp-route-id="@tecnico.Id"><button type="button" class="btn btn-info" style="font-size:0.4cm;">Detalles</button></a>   
+                <a asp-page="./Detalles" asp-route-id="@tecnico.Id_tecnico"><button type="button" class="btn btn-info" style="font-size:0.4cm;">Detalles</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Actualizar" asp-route-id="@tecnico.Id"><button type="button" class="btn btn-primary" style="font-size:0.4cm;">Actualizar</button></a>   
+                 <a asp-page="./Actualizar" asp-route-id="@tecnico.Id_tecnico"><button type="button" class="btn btn-primary" style="font-size:0.4cm;">Actualizar</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Eliminar" asp-route-id="@tecnico.Id"><button type="button" class="btn btn-danger" style="font-size:0.4cm;">Eliminar</button></a>   
+                 <a asp-page="./Eliminar" asp-route-id="@tecnico.Id_tecnico"><button type="button" class="btn btn-danger" style="font-size:0.4cm;">Eliminar</button></a>   
                 </td>
             </tr>
         }

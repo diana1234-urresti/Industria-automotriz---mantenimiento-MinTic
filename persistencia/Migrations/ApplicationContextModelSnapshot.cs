@@ -21,7 +21,7 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Cliente", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_cliente")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -32,17 +32,45 @@ namespace persistencia.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime>("FechaIngreso")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("VehiculoId_vehiculo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_cliente");
+
+                    b.HasIndex("VehiculoId_vehiculo");
+
+                    b.ToTable("cliente");
+                });
+
+            modelBuilder.Entity("dominio.Curso", b =>
+                {
+                    b.Property<int>("CursoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<DateTime>("FechaPublicacion")
                         .HasMaxLength(50)
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("TipoVehiculo")
+                    b.Property<string>("Titulo")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("Id");
+                    b.Property<byte[]>("fotoPortada")
+                        .HasColumnType("varbinary(max)");
 
-                    b.ToTable("cliente");
+                    b.HasKey("CursoId");
+
+                    b.ToTable("curso");
                 });
 
             modelBuilder.Entity("dominio.Factura", b =>
@@ -136,6 +164,31 @@ namespace persistencia.Migrations
                     b.ToTable("persona");
                 });
 
+            modelBuilder.Entity("dominio.Precio", b =>
+                {
+                    b.Property<int>("PrecioId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("CursoId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("PrecioActual")
+                        .HasMaxLength(100)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Promocion")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("PrecioId");
+
+                    b.HasIndex("CursoId")
+                        .IsUnique();
+
+                    b.ToTable("precio");
+                });
+
             modelBuilder.Entity("dominio.Repuesto", b =>
                 {
                     b.Property<int>("Id")
@@ -189,7 +242,7 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Tecnico", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_tecnico")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -197,9 +250,99 @@ namespace persistencia.Migrations
                     b.Property<double>("Sueldo")
                         .HasColumnType("float");
 
-                    b.HasKey("Id");
+                    b.Property<int?>("VehiculoId_vehiculo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_tecnico");
+
+                    b.HasIndex("VehiculoId_vehiculo");
 
                     b.ToTable("tecnico");
+                });
+
+            modelBuilder.Entity("dominio.Vehiculo", b =>
+                {
+                    b.Property<int>("Id_vehiculo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("FechaIngreso")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Id_cliente")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_tecnico")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Marca")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Matricula")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Modelo")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Tipo_de_falla")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.HasKey("Id_vehiculo");
+
+                    b.ToTable("vehiculo");
+                });
+
+            modelBuilder.Entity("dominio.Cliente", b =>
+                {
+                    b.HasOne("dominio.Vehiculo", "Vehiculo")
+                        .WithMany("ClienteLista")
+                        .HasForeignKey("VehiculoId_vehiculo");
+
+                    b.Navigation("Vehiculo");
+                });
+
+            modelBuilder.Entity("dominio.Precio", b =>
+                {
+                    b.HasOne("dominio.Curso", "curso")
+                        .WithOne("Precio")
+                        .HasForeignKey("dominio.Precio", "CursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("curso");
+                });
+
+            modelBuilder.Entity("dominio.Tecnico", b =>
+                {
+                    b.HasOne("dominio.Vehiculo", null)
+                        .WithMany("TecnicoLista")
+                        .HasForeignKey("VehiculoId_vehiculo");
+                });
+
+            modelBuilder.Entity("dominio.Curso", b =>
+                {
+                    b.Navigation("Precio");
+                });
+
+            modelBuilder.Entity("dominio.Vehiculo", b =>
+                {
+                    b.Navigation("ClienteLista");
+
+                    b.Navigation("TecnicoLista");
                 });
 #pragma warning restore 612, 618
         }

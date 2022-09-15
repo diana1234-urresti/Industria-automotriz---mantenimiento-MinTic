@@ -30,25 +30,24 @@ namespace persistencia
         }
 
         Cliente IRepositorio_cliente.Get(int Idcliente){
-         return _applicationContext.cliente.FirstOrDefault(p=>p.Id==Idcliente);
+         return _applicationContext.cliente.FirstOrDefault(p=>p.Id_cliente==Idcliente);
          
 
         } 
 
         Cliente IRepositorio_cliente.Update(Cliente clientes){
-         var ClienteEncontrado=_applicationContext.cliente.FirstOrDefault(p=>p.Id==clientes.Id);
+         var ClienteEncontrado=_applicationContext.cliente.FirstOrDefault(p=>p.Id_cliente==clientes.Id_cliente);
          if (ClienteEncontrado!=null){
             ClienteEncontrado.Ciudad=clientes.Ciudad;
             ClienteEncontrado.FechaIngreso=clientes.FechaIngreso;
-            ClienteEncontrado.TipoVehiculo=clientes.TipoVehiculo;
-         }
+             }
          _applicationContext.SaveChanges();
          return ClienteEncontrado;
         }
 
         void IRepositorio_cliente.Delete (int idCliente){
 
-        var ClienteEncontrado=_applicationContext.cliente.FirstOrDefault(p=>p.Id==idCliente);
+        var ClienteEncontrado=_applicationContext.cliente.FirstOrDefault(p=>p.Id_cliente==idCliente);
         if (ClienteEncontrado==null)
         return;
         _applicationContext.Remove(ClienteEncontrado);

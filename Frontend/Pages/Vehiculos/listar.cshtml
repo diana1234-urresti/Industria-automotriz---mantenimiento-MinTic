@@ -1,0 +1,45 @@
+﻿@page
+@model MyApp.Namespace.listarvehiculoModel
+@{
+}
+
+<div class="justify-content-center text-center">
+  <h2>Lista de Vehiculos</h2>
+    <br>
+</div>
+<div>
+<div>
+<a asp-page="Crear"><button type="button" class="btn btn-success">Crear Vehiculo</button></a>
+</div>
+    <br>
+    <table width="1200" border="0" cellspacing="2" cellpadding="1">
+        <tr>
+            <th style="font-size:0.4cm;">ID</th>
+            <th style="font-size:0.4cm;">MARCA</th>
+            <th style="font-size:0.4cm;">MODELO</th>
+            <th style="font-size:0.4cm;">MATRICULA</th>
+            <th style="font-size:0.4cm;">TIPO</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach(var vehiculo in Model.Vehiculo){
+            <tr>
+                <td style="font-size:0.4cm;">@vehiculo.Id_vehiculo</td>
+                <td style="font-size:0.4cm;">@vehiculo.Marca</td>
+                <td style="font-size:0.4cm;">@vehiculo.Modelo</td>
+                <td style="font-size:0.4cm;">@vehiculo.Matricula</td>
+                <td style="font-size:0.4cm;">@vehiculo.Tipo</td>
+                <td>
+                <a asp-page="./Detalles" asp-route-id="@vehiculo.Id_vehiculo"><button type="button" class="btn btn-info" style="font-size:0.4cm;">Detalles</button></a>   
+                </td>
+                <td>
+                 <a asp-page="./Actualizar" asp-route-id="@vehiculo.Id_vehiculo"><button type="button" class="btn btn-primary" style="font-size:0.4cm;">Actualizar</button></a>   
+                </td>
+                <td>
+                 <a asp-page="./Eliminar" asp-route-id="@vehiculo.Id_vehiculo"><button type="button" class="btn btn-danger" style="font-size:0.4cm;">Eliminar</button></a>   
+                </td>
+            </tr>
+        }
+    </table>
+</div>

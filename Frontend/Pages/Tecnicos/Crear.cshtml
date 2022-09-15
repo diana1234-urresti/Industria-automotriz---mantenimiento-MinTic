@@ -8,11 +8,12 @@
     <hr>
  </div>
 <form method="post">
-  <table class="table-hover" width="600" height="300"  align="center" >
+  <table class="table-hover" width="600" height="300"  align="center" asp-validation-summary="ModelOnly" class="text-danger" >
     <tr>
       <td width="260" style="font-size:0.4cm;">Sueldo</td>
       <td width="340">
        <input asp-for="Tecnicos.Sueldo" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Tecnicos.Sueldo" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
    </table>

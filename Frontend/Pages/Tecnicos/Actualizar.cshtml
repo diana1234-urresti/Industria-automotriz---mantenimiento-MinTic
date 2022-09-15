@@ -6,15 +6,17 @@
     <h2>Actualizar Datos del Tecnico</h2>
     <br>
     <hr>
-    <form method="post" >
+    <form method="post" asp-validation-summary="ModelOnly" class="text-danger" >
 
     <div class="container">
       <div class="row">
         <div class="col" style="font-size:0.4cm;"><strong>@Html.DisplayNameFor(m => m.Tecnicos.Sueldo)</strong></div>
         <div class="col" style="font-size:0.4cm;size:35">@Html.TextBoxFor(m =>m.Tecnicos.Sueldo)</div>
+        <span asp-validation-for="Tecnicos.Sueldo" class="text-danger" style="font-size:0.4cm;"></span>
      </div>
     <br>
     <hr>
+    <input type="hidden"  asp-for="Tecnicos.Id_tecnico"/>
     <input type="hidden"  asp-for="Tecnicos"/>    
     <input type="submit" value="Actualizar" class="btn btn-primary" asp-page="Actualizar/OnPost"/>    
     </form>

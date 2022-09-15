@@ -25,11 +25,15 @@ namespace MyApp.Namespace
           Tecnicos = _repo_tecnicos.Get(id);
         }
 
-      //   public IActionResult OnPost(Tecnico Tecnicos)
-      //  {
-      //        _repo_tecnicos.Update(Tecnicos);
-       //        return new RedirectToPageResult("listar");
+         public IActionResult OnPost(Tecnico tecnicos)
+        {
+
+              if(!ModelState.IsValid)
+              return Page();
+
+             _repo_tecnicos.Update(tecnicos);
+              return new RedirectToPageResult("listar");
             
-       // }
+       }
     }
 }

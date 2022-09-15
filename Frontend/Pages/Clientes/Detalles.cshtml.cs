@@ -20,9 +20,9 @@ namespace MyApp.Namespace
           _repo_clientes = Repositorio_Cliente;   
         }
         
-        public void OnGet(int id)
+        public void OnGet(int Id_cliente)
         {
-          Clientes = _repo_clientes.Get(id);
+          Clientes = _repo_clientes.Get(Id_cliente);
         }
     }
 }

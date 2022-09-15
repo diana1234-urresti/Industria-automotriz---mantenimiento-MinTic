@@ -30,23 +30,25 @@ namespace persistencia
         }
 
         Tecnico IRepositorio_tecnico.Get(int Idtecnico){
-         return _applicationContext.tecnico.FirstOrDefault(p=>p.Id==Idtecnico);
+         return _applicationContext.tecnico.FirstOrDefault(p=>p.Id_tecnico==Idtecnico);
          
 
         } 
 
-      /* Tecnico IRepositorio_tecnico.Update(Tecnico tecnicos){
-        var tecnicoEncontrado=_applicationContext.tecnico.FirstOrDefault(p=>p.Id==tecnicos.Id);
-        if (tecnicoEncontrado!=null){
-           tecnicoEncontrado.sueldo=tecnicos.sueldo;
-                   
+          Tecnico IRepositorio_tecnico.Update(Tecnico tecnicos){
+         var TecnicoEncontrado = _applicationContext.tecnico.FirstOrDefault(
+            p => p.Id_tecnico == tecnicos.Id_tecnico);
+         if (TecnicoEncontrado != null){
+            TecnicoEncontrado.Sueldo=tecnicos.Sueldo;
+              }
          _applicationContext.SaveChanges();
-         return tecnicoEncontrado;
-        }  }*/
+         return TecnicoEncontrado;
+        }
+ 
 
         void IRepositorio_tecnico.Delete (int idtecnico){
 
-        var tecnicoEncontrado=_applicationContext.tecnico.FirstOrDefault(p=>p.Id==idtecnico);
+        var tecnicoEncontrado=_applicationContext.tecnico.FirstOrDefault(p=>p.Id_tecnico==idtecnico);
         if (tecnicoEncontrado==null)
         return;
         _applicationContext.Remove(tecnicoEncontrado);

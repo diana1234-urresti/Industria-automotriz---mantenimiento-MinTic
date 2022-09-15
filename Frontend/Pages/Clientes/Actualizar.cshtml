@@ -20,10 +20,7 @@
       <span asp-validation-for="Clientes.FechaIngreso" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     <tr>
-      <td width="260" style="font-size:0.4cm;">Tipo de vehiculo</td>
-      <td width="340">@Html.TextBoxFor(m => m.Clientes.TipoVehiculo)        
-        <span asp-validation-for="Clientes.TipoVehiculo" class="text-danger" style="font-size:0.4cm;"></span>
-        <input type="hidden"  asp-for="Clientes.Id"/>
+        <input type="hidden"  asp-for="Clientes.Id_cliente"/>
         <input type="hidden"  asp-for="Clientes"/>        
     </form>
       </td>

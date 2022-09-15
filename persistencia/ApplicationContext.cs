@@ -15,6 +15,9 @@ namespace persistencia
         public DbSet<Revision> revision {get; set;}
         public DbSet<Tecnico> tecnico {get; set;}
         public DbSet<Ingreso> ingreso {get; set;}
+        public DbSet<Precio> precio {get; set;}
+        public DbSet<Curso> curso {get; set;}
+        public DbSet<Vehiculo> vehiculo {get; set;}
 
         public ApplicationContext(){}
 
