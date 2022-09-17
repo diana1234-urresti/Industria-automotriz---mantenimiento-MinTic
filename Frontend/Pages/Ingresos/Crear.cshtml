@@ -13,17 +13,20 @@
       <td width="260">Nombre de Usuario</td>
       <td width="340">
        <input asp-for="Ingresos.NameUsuario" class="form-control" size="35" />
+      <span asp-validation-for="Ingresos.NameUsuario" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     <tr>
       <td width="260">Contraseña</td>
       <td width="340">
         <input asp-for="Ingresos.Contraseña" class="form-control" size="35" />
+        <span asp-validation-for="Ingresos.Contraseña" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     <tr>
       <td width="260">Tipo de Usuario</td>
       <td width="340">
         <input asp-for="Ingresos.TipoUsuario" class="form-control" size="35" />
+        <span asp-validation-for="Ingresos.TipoUsuario" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
    
