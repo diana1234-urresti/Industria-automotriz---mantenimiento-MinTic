@@ -14,12 +14,12 @@
        <br><span asp-validation-for="Revisiones.NoRevision" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
-    <tr>
+    <!--<tr>
       <td width="260" style="font-size:0.4cm;">Placa de Vehiculo</td>
-      <td width="340"> @Html.TextBoxFor(m => m.Revisiones.NoPlaca)
+      <td width="340"> Html.TextBoxFor(m => m.Revisiones.NoPlaca)
        <br><span asp-validation-for="Revisiones.NoPlaca" class="text-danger" style="font-size:0.4cm;"></span>
-      </td>
-    <tr>
+      </td> //Se debe poner arroa antes de HTML para que funcione el codigo, se comenta por las clases relacionadas
+    <tr>--> 
     <tr>
       <td width="260" style="font-size:0.4cm;">Tipo de Mantenimiento</td>
       <td width="340"> @Html.TextBoxFor(m => m.Revisiones.TipoMantenimiento)
@@ -50,7 +50,7 @@
        <br><span asp-validation-for="Revisiones.EstadoAceite" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     <tr>
-        <input type="hidden"  asp-for="Revisiones.Id"/>
+        <input type="hidden"  asp-for="Revisiones.Id_revision"/>
         <input type="hidden"  asp-for="Revisiones"/>        
     </form>
       </td>

@@ -7,7 +7,7 @@ namespace dominio
     public class Factura
     {
         [Key]
-        public int Id {get;set;}
+        public int Id_factura {get;set;}
 
         [Required(ErrorMessage="Ingrese la Fecha de facturacion, campo obligatorio")]
         public DateTime FechaFacturacion {get;set;}
@@ -17,7 +17,7 @@ namespace dominio
 
         [Required(ErrorMessage="Ingrese el costo del Repuesto")]
         public double CostoRepuesto {get;set;}
-        
+    
         [Required(ErrorMessage="Ingrese el valor del IVA")]
         public double Iva {get;set;}
         

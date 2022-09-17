@@ -27,13 +27,13 @@
                 <td>@ingreso.Contraseña</td>
                 <td>@ingreso.TipoUsuario</td>
                 <td>
-                <a asp-page="./Detalles" asp-route-id="@ingreso.Id"><button type="button" class="btn btn-info">Detalles</button></a>   
+                <a asp-page="./Detalles" asp-route-id="@ingreso.Id_ingreso"><button type="button" class="btn btn-info">Detalles</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Actualizar" asp-route-id="@ingreso.Id"><button type="button" class="btn btn-primary">Actualizar</button></a>   
+                 <a asp-page="./Actualizar" asp-route-id="@ingreso.Id_ingreso"><button type="button" class="btn btn-primary">Actualizar</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Eliminar" asp-route-id="@ingreso.Id"><button type="button" class="btn btn-danger">Eliminar</button></a>   
+                 <a asp-page="./Eliminar" asp-route-id="@ingreso.Id_ingreso"><button type="button" class="btn btn-danger">Eliminar</button></a>   
                 </td>
             </tr>
         }

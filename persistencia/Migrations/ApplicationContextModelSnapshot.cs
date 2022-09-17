@@ -212,7 +212,7 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Revision", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_revision")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -230,11 +230,6 @@ namespace persistencia.Migrations
                     b.Property<DateTime>("FechaRevision")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NoPlaca")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
                     b.Property<int>("NoRevision")
                         .HasColumnType("int");
 
@@ -248,7 +243,12 @@ namespace persistencia.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("Id");
+                    b.Property<int?>("VehiculoId_vehiculo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_revision");
+
+                    b.HasIndex("VehiculoId_vehiculo");
 
                     b.ToTable("revision");
                 });
@@ -284,6 +284,9 @@ namespace persistencia.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Id_cliente")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_revision")
                         .HasColumnType("int");
 
                     b.Property<int>("Id_tecnico")
@@ -339,6 +342,15 @@ namespace persistencia.Migrations
                     b.Navigation("curso");
                 });
 
+            modelBuilder.Entity("dominio.Revision", b =>
+                {
+                    b.HasOne("dominio.Vehiculo", "Vehiculo")
+                        .WithMany("RevisionLista")
+                        .HasForeignKey("VehiculoId_vehiculo");
+
+                    b.Navigation("Vehiculo");
+                });
+
             modelBuilder.Entity("dominio.Tecnico", b =>
                 {
                     b.HasOne("dominio.Vehiculo", "Vehiculo")
@@ -356,6 +368,8 @@ namespace persistencia.Migrations
             modelBuilder.Entity("dominio.Vehiculo", b =>
                 {
                     b.Navigation("ClienteLista");
+
+                    b.Navigation("RevisionLista");
 
                     b.Navigation("TecnicoLista");
                 });

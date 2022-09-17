@@ -30,13 +30,13 @@ namespace persistencia
         }
 
         Factura IRepositorio_Factura.Get(int Idfactura){
-         return _applicationContext.factura.FirstOrDefault(p=>p.Id==Idfactura);
+         return _applicationContext.factura.FirstOrDefault(p=>p.Id_factura==Idfactura);
          
 
         } 
 
         Factura IRepositorio_Factura.Update(Factura factura){
-         var FacturaEncontrada=_applicationContext.factura.FirstOrDefault(p=>p.Id==factura.Id);
+         var FacturaEncontrada=_applicationContext.factura.FirstOrDefault(p=>p.Id_factura==factura.Id_factura);
          if (FacturaEncontrada!=null){
             FacturaEncontrada.FechaFacturacion=factura.FechaFacturacion;
             FacturaEncontrada.CostoRevision=factura.CostoRevision;
@@ -50,7 +50,7 @@ namespace persistencia
 
         void IRepositorio_Factura.Delete (int idfactura){
 
-        var FacturaEncontrada=_applicationContext.factura.FirstOrDefault(p=>p.Id==idfactura);
+        var FacturaEncontrada=_applicationContext.factura.FirstOrDefault(p=>p.Id_factura==idfactura);
         if (FacturaEncontrada==null)
         return;
         _applicationContext.Remove(FacturaEncontrada);

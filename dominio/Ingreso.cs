@@ -8,7 +8,7 @@ namespace dominio
     public class Ingreso
     {
         [Key]
-        public int Id{get;set;}
+        public int Id_ingreso{get;set;}
 
         [Required(ErrorMessage="Ingrese el nombre de usuario")]
         public string NameUsuario {get;set;}

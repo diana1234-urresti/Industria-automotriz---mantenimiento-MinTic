@@ -41,10 +41,15 @@ namespace dominio
 
         [ForeignKey("Tecnico")] 
         public int Id_tecnico { get; set;}
-        
-        public ICollection<Cliente> ClienteLista {get;set;} 
 
-        public ICollection<Tecnico> TecnicoLista {get;set;}
+        [ForeignKey("Revision")]
+        public int Id_revision{get;set;}
+
+        public ICollection<Cliente> ClienteLista  {get;set;} 
+
+        public ICollection<Tecnico> TecnicoLista  {get;set;}
+
+        public ICollection<Revision> RevisionLista {get;set;}
        
     }
 }

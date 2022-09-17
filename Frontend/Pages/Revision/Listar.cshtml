@@ -15,7 +15,7 @@
     <table class="table">
         <tr>
             <th>Numero Revision</th>
-            <th>Placa Vehiculo</th>
+            <!--<th>Placa Vehiculo</th>-->
             <th>Tipo de Mantenimiento</th>
             <th>Fecha de Revision</th>
             <th>Estado de Filtro</th>
@@ -28,20 +28,20 @@
         @foreach(var revision in Model.Revision){
             <tr>
                 <td>@revision.NoRevision</td>
-                <td>@revision.NoPlaca</td>
+                <!--<td>//revision.NoPlaca</td>-->
                 <td>@revision.TipoMantenimiento</td>
                 <td>@revision.FechaRevision</td>
                 <td>@revision.EstadoFiltro</td>
                 <td>@revision.Repuesto</td>
                 <td>@revision.EstadoAceite</td>
                 <td>
-                <a asp-page="./Detalles" asp-route-id="@revision.Id"><button type="button" class="btn btn-info">Detalles</button></a>   
+                <a asp-page="./Detalles" asp-route-id="@revision.Id_revision"><button type="button" class="btn btn-info">Detalles</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Actualizar" asp-route-id="@revision.Id"><button type="button" class="btn btn-primary">Actualizar</button></a>   
+                 <a asp-page="./Actualizar" asp-route-id="@revision.Id_revision"><button type="button" class="btn btn-primary">Actualizar</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Eliminar" asp-route-id="@revision.Id"><button type="button" class="btn btn-danger">Eliminar</button></a>   
+                 <a asp-page="./Eliminar" asp-route-id="@revision.Id_revision"><button type="button" class="btn btn-danger">Eliminar</button></a>   
                 </td>
             </tr>
         }

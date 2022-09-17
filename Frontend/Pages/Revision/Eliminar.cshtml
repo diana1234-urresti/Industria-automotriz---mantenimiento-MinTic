@@ -10,9 +10,9 @@
     <div class="col" ><strong>Numero de Revision</strong></div>
     <div class="col">@Html.DisplayFor(m => m.Revisiones.NoRevision)</div>
         <div class="w-100"></div>
-    <div class="col"><strong>Placa de Vehiculo</strong></div>
-    <div class="col"> @Html.DisplayFor(m => m.Revisiones.NoPlaca)</div>
-        <div class="w-100"></div>
+    <!--<div class="col"><strong>Placa de Vehiculo</strong></div>
+    <div class="col"> Html.DisplayFor(m => m.Revisiones.NoPlaca)</div>
+        <div class="w-100"></div>-->
     <div class="col"><strong>Tipo de Mantenimiento</strong></div>
     <div class="col">@Html.DisplayFor(m => m.Revisiones.TipoMantenimiento)</div>
         <div class="w-100"></div>
@@ -30,7 +30,7 @@
   </div><br>
     <hr>
     <form method="post" >
-    <input type="hidden"  asp-for="Revisiones.Id"/>    
+    <input type="hidden"  asp-for="Revisiones.Id_revision"/>    
     <input type="submit" value="Confirmar" class="btn btn-danger" asp-page="/Eliminar/OnPost"/>    
     </form>
 </div>

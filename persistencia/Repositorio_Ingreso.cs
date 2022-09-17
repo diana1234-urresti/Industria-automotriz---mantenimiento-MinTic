@@ -30,13 +30,13 @@ namespace persistencia
         }
 
         Ingreso IRepositorio_Ingreso.Get(int Idingreso){
-         return _applicationContext.ingresos.FirstOrDefault(p=>p.Id==Idingreso);
+         return _applicationContext.ingresos.FirstOrDefault(p=>p.Id_ingreso==Idingreso);
          
 
         } 
 
         Ingreso IRepositorio_Ingreso.Update(Ingreso ingresos){
-         var IngresoEncontrado=_applicationContext.ingresos.FirstOrDefault(p=>p.Id==ingresos.Id);
+         var IngresoEncontrado=_applicationContext.ingresos.FirstOrDefault(p=>p.Id_ingreso==ingresos.Id_ingreso);
          if (IngresoEncontrado!=null){
             IngresoEncontrado.NameUsuario=ingresos.NameUsuario;
             IngresoEncontrado.Contraseña=ingresos.Contraseña;
@@ -49,7 +49,7 @@ namespace persistencia
 
         void IRepositorio_Ingreso.Delete (int idingreso){
 
-        var IngresoEncontrado=_applicationContext.ingresos.FirstOrDefault(p=>p.Id==idingreso);
+        var IngresoEncontrado=_applicationContext.ingresos.FirstOrDefault(p=>p.Id_ingreso==idingreso);
         if (IngresoEncontrado==null)
         return;
         _applicationContext.Remove(IngresoEncontrado);
