@@ -27,6 +27,10 @@ namespace MyApp.Namespace
 
          public IActionResult OnPost(Factura Facturas)
         {
+            if(!ModelState.IsValid)
+             return Page();
+
+             
             _repo_Factura.Add(Facturas);
             return new RedirectToPageResult("/Facturas/Listar");
         }

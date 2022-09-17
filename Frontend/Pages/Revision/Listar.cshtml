@@ -14,7 +14,6 @@
     <br>
     <table class="table">
         <tr>
-            <th>ID</th>
             <th>Numero Revision</th>
             <th>Placa Vehiculo</th>
             <th>Tipo de Mantenimiento</th>
@@ -28,7 +27,6 @@
         </tr>
         @foreach(var revision in Model.Revision){
             <tr>
-                <td>@revision.Id</td>
                 <td>@revision.NoRevision</td>
                 <td>@revision.NoPlaca</td>
                 <td>@revision.TipoMantenimiento</td>
