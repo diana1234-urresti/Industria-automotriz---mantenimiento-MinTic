@@ -27,6 +27,9 @@ namespace MyApp.Namespace
 
          public IActionResult OnPost(Ingreso Ingresos)
         {
+             if(!ModelState.IsValid)
+             return Page();
+             
             _repo_Ingreso.Add(Ingresos);
             return new RedirectToPageResult("/Ingresos/Listar");
         }

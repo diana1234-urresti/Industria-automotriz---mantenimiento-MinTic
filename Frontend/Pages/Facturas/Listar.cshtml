@@ -26,20 +26,20 @@
         </tr>
         @foreach(var factura in Model.Facturas){
             <tr>
-                <td>@factura.Id</td>
+                <td>@factura.Id_factura</td>
                 <td>@factura.FechaFacturacion</td>
                 <td>@factura.CostoRevision</td>
                 <td>@factura.CostoRepuesto</td>
                 <td>@factura.Iva</td>
                 <td>@factura.Total</td>
                 <td>
-                <a asp-page="./Detalles" asp-route-id="@factura.Id"><button type="button" class="btn btn-info">Detalles</button></a>   
+                <a asp-page="./Detalles" asp-route-id="@factura.Id_factura"><button type="button" class="btn btn-info">Detalles</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Actualizar" asp-route-id="@factura.Id"><button type="button" class="btn btn-primary">Actualizar</button></a>   
+                 <a asp-page="./Actualizar" asp-route-id="@factura.Id_factura"><button type="button" class="btn btn-primary">Actualizar</button></a>   
                 </td>
                 <td>
-                 <a asp-page="./Eliminar" asp-route-id="@factura.Id"><button type="button" class="btn btn-danger">Eliminar</button></a>   
+                 <a asp-page="./Eliminar" asp-route-id="@factura.Id_factura"><button type="button" class="btn btn-danger">Eliminar</button></a>   
                 </td>
             </tr>
         }

@@ -112,8 +112,8 @@ namespace persistencia.Migrations
                     b.Property<double>("CostoRevision")
                         .HasColumnType("float");
 
-                    b.Property<string>("FechaFacturacion")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaFacturacion")
+                        .HasColumnType("datetime2");
 
                     b.Property<double>("Iva")
                         .HasColumnType("float");
@@ -134,12 +134,15 @@ namespace persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Contraseña")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NameUsuario")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoUsuario")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -235,33 +238,43 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Revision", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_revision")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
                     b.Property<string>("EstadoAceite")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("EstadoFiltro")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("FechaRevision")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NoPlaca")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaRevision")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("NoRevision")
                         .HasColumnType("int");
 
                     b.Property<string>("Repuesto")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("TipoMantenimiento")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("Id");
+                    b.Property<int?>("VehiculoId_vehiculo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_revision");
+
+                    b.HasIndex("VehiculoId_vehiculo");
 
                     b.ToTable("revision");
                 });
@@ -325,6 +338,9 @@ namespace persistencia.Migrations
                     b.Property<int>("Id_cliente")
                         .HasColumnType("int");
 
+                    b.Property<int>("Id_revision")
+                        .HasColumnType("int");
+
                     b.Property<int>("Id_tecnico")
                         .HasColumnType("int");
 
@@ -379,6 +395,7 @@ namespace persistencia.Migrations
                     b.Navigation("curso");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("dominio.Vehiculo", b =>
                 {
                     b.HasOne("dominio.Cliente", "clientes")
@@ -397,6 +414,24 @@ namespace persistencia.Migrations
             modelBuilder.Entity("dominio.Cliente", b =>
                 {
                     b.Navigation("VehiculoLista");
+=======
+            modelBuilder.Entity("dominio.Revision", b =>
+                {
+                    b.HasOne("dominio.Vehiculo", "Vehiculo")
+                        .WithMany("RevisionLista")
+                        .HasForeignKey("VehiculoId_vehiculo");
+
+                    b.Navigation("Vehiculo");
+                });
+
+            modelBuilder.Entity("dominio.Tecnico", b =>
+                {
+                    b.HasOne("dominio.Vehiculo", "Vehiculo")
+                        .WithMany("TecnicoLista")
+                        .HasForeignKey("VehiculoId_vehiculo");
+
+                    b.Navigation("Vehiculo");
+>>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
                 });
 
             modelBuilder.Entity("dominio.Curso", b =>
@@ -406,7 +441,15 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Tecnico", b =>
                 {
+<<<<<<< HEAD
                     b.Navigation("VehiculoLista");
+=======
+                    b.Navigation("ClienteLista");
+
+                    b.Navigation("RevisionLista");
+
+                    b.Navigation("TecnicoLista");
+>>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
                 });
 #pragma warning restore 612, 618
         }

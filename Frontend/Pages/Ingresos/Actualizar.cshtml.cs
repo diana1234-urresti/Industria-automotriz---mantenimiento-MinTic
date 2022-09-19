@@ -30,6 +30,9 @@ namespace MyApp.Namespace
 
         public IActionResult OnPost(Ingreso Ingresos)
         {
+              if(!ModelState.IsValid)
+             return Page();
+              
               _repo_Ingreso.Update(Ingresos);
                return new RedirectToPageResult("Listar");
             

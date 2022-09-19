@@ -27,6 +27,9 @@ namespace MyApp.Namespace
 
          public IActionResult OnPost(Revision Revisiones)
         {
+            if(!ModelState.IsValid)
+             return Page();
+             
             _repo_Revision.Add(Revisiones);
             return new RedirectToPageResult("/Revision/Listar");
         }

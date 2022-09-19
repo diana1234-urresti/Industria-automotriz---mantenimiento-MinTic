@@ -30,16 +30,16 @@ namespace persistencia
         }
 
         Revision IRepositorio_Revisiones.Get(int IdRevision){
-         return _applicationContext.revision.FirstOrDefault(p=>p.Id==IdRevision);
+         return _applicationContext.revision.FirstOrDefault(p=>p.Id_revision==IdRevision);
          
 
         } 
 
         Revision IRepositorio_Revisiones.Update(Revision revisiones){
-         var RevisionEncontrada=_applicationContext.revision.FirstOrDefault(p=>p.Id==revisiones.Id);
+         var RevisionEncontrada=_applicationContext.revision.FirstOrDefault(p=>p.Id_revision==revisiones.Id_revision);
          if (RevisionEncontrada!=null){
             RevisionEncontrada.NoRevision=revisiones.NoRevision;
-            RevisionEncontrada.NoPlaca=revisiones.NoPlaca;
+            //RevisionEncontrada.NoPlaca=revisiones.NoPlaca;
             RevisionEncontrada.TipoMantenimiento=revisiones.TipoMantenimiento;
             RevisionEncontrada.FechaRevision=revisiones.FechaRevision;
             RevisionEncontrada.EstadoFiltro=revisiones.EstadoFiltro;
@@ -52,7 +52,7 @@ namespace persistencia
 
         void IRepositorio_Revisiones.Delete (int idrevision){
 
-        var RevisionEncontrada=_applicationContext.revision.FirstOrDefault(p=>p.Id==idrevision);
+        var RevisionEncontrada=_applicationContext.revision.FirstOrDefault(p=>p.Id_revision==idrevision);
         if (RevisionEncontrada==null)
         return;
         _applicationContext.Remove(RevisionEncontrada);

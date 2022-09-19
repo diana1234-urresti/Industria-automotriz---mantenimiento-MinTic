@@ -13,29 +13,36 @@
       <td width="260">Fecha de Facturacion</td>
       <td width="340">
        <input asp-for="Facturas.FechaFacturacion" class="form-control" size="35" />
+       <br><span asp-validation-for="Facturas.FechaFacturacion" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     <tr>
       <td width="260">Costo de Revision</td>
       <td width="340">
         <input asp-for="Facturas.CostoRevision" class="form-control" size="35" />
+        <br><span asp-validation-for="Facturas.CostoRevision" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     <tr>
       <td width="260">Costo de Repuesto</td>
       <td width="340">
         <input asp-for="Facturas.CostoRepuesto" class="form-control" size="35" />
+        
+        <br><span asp-validation-for="Facturas.CostoRepuesto" class="text-danger" style="font-size:0.4cm;"></span>
+      
       </td>
     </tr>
     <tr>
       <td width="260">IVA</td>
       <td width="340">
         <input asp-for="Facturas.Iva" class="form-control" size="35" />
+        <br><span asp-validation-for="Facturas.Iva" class="text-danger" style="font-size:0.4cm;"></span>
       </td>
     </tr>
     <tr>
       <td width="260">Total</td>
       <td width="340">
         <input asp-for="Facturas.Total" class="form-control" size="35" />
+       <br> <span asp-validation-for="Facturas.Total" class="text-danger" style="font-size:0.4cm;"></span>      
       </td>
     </tr>  
     </table>
