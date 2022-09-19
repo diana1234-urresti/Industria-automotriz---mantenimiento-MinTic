@@ -29,12 +29,12 @@ namespace persistencia
 
         Persona IRepositorio_Personas.Get(int Idpersona){
          return _applicationContext.persona.FirstOrDefault(
-            p => p.Id == Idpersona );         
+            p => p.Id_persona == Idpersona );         
         } 
 
         Persona IRepositorio_Personas.Update(Persona persona){
          var PersonaEncontrada = _applicationContext.persona.FirstOrDefault(
-            p => p.Id == persona.Id);
+            p => p.Id_persona == persona.Id_persona);
          if (PersonaEncontrada != null){
             PersonaEncontrada.Nombre=persona.Nombre;
             PersonaEncontrada.Apellido=persona.Apellido;
@@ -51,7 +51,7 @@ namespace persistencia
         void IRepositorio_Personas.Delete(int Idpersona){
 
         var PersonaEncontrada=_applicationContext.persona.FirstOrDefault(
-            p => p.Id ==  Idpersona);
+            p => p.Id_persona ==  Idpersona);
         if (PersonaEncontrada == null)
         return;
         _applicationContext.Remove(PersonaEncontrada);

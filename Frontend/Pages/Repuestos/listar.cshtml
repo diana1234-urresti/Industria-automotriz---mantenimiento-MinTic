@@ -1,0 +1,41 @@
+﻿@page
+@model MyApp.Namespace.listarModelRespuestos
+@{
+}
+<div class="justify-content-center text-center">
+  <h1>Lista de Repuestos</h1>
+    <br>
+</div>
+<div>
+<div>
+<a asp-page="Crear"><button type="button" class="btn btn-success">Adicionar repuesto</button></a>
+</div>
+    <br>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>VALOR</th>
+            <th>PARTE</th>
+            <th>DETALLES</th>
+            <th>ACTUALIZAR</th>
+            <th>ELIMINAR</th>
+            
+        </tr>
+        @foreach(var repuesto in Model.Repuesto){
+            <tr>
+                <td>@repuesto.Id</td>
+                <td>@repuesto.Valor</td>
+                <td>@repuesto.NombreParte</td>
+                <td>
+                <a asp-page="./Detalles" asp-route-id="@repuesto.Id"><button type="button" class="btn btn-info">Detalles</button></a>   
+                </td>
+                <td>
+                 <a asp-page="./Actualizar" asp-route-id="@repuesto.Id"><button type="button" class="btn btn-primary">Actualizar</button></a>   
+                </td>
+                <td>
+                 <a asp-page="./Eliminar" asp-route-id="@repuesto.Id"><button type="button" class="btn btn-danger">Eliminar</button></a>   
+                </td>
+            </tr>
+        }
+    </table>
+</div>

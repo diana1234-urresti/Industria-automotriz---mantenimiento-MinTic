@@ -10,6 +10,48 @@
 <form method="post">
   <table class="table-hover" width="600" height="300"  align="center" asp-validation-summary="ModelOnly" class="text-danger" >
     <tr>
+      <td width="260" style="font-size:0.4cm;">Nombre</td>
+      <td width="340">
+       <input asp-for="Tecnicos.Nombre" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Tecnicos.Nombre" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Apellidos</td>
+      <td width="340">
+       <input asp-for="Tecnicos.Apellido" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Tecnicos.Apellido" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Correo Electronico</td>
+      <td width="340">
+       <input asp-for="Tecnicos.Email" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Tecnicos.Email" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Fecha de Nacimiento</td>
+      <td width="340">
+       <input asp-for="Tecnicos.FechaN" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Tecnicos.FechaN" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Numero de Identificacion </td>
+      <td width="340">
+       <input asp-for="Tecnicos.Identificacion" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Tecnicos.Identificacion" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Telefono</td>
+      <td width="340">
+       <input asp-for="Tecnicos.Telefono" class="form-control" size="35" style="font-size:0.4cm;"/>
+       <span asp-validation-for="Tecnicos.Telefono" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
       <td width="260" style="font-size:0.4cm;">Sueldo</td>
       <td width="340">
        <input asp-for="Tecnicos.Sueldo" class="form-control" size="35" style="font-size:0.4cm;"/>

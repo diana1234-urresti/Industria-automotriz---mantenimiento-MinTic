@@ -39,6 +39,12 @@ namespace persistencia
          var TecnicoEncontrado = _applicationContext.tecnico.FirstOrDefault(
             p => p.Id_tecnico == tecnicos.Id_tecnico);
          if (TecnicoEncontrado != null){
+            TecnicoEncontrado.Nombre=tecnicos.Nombre;
+            TecnicoEncontrado.Apellido=tecnicos.Apellido;
+            TecnicoEncontrado.Email=tecnicos.Email;
+            TecnicoEncontrado.FechaN=tecnicos.FechaN;
+            TecnicoEncontrado.Identificacion=tecnicos.Identificacion;
+            TecnicoEncontrado.Telefono=tecnicos.Telefono;
             TecnicoEncontrado.Sueldo=tecnicos.Sueldo;
               }
          _applicationContext.SaveChanges();

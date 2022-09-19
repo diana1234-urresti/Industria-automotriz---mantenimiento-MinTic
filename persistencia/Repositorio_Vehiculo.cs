@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace persistencia
 {
@@ -57,8 +58,16 @@ namespace persistencia
         _applicationContext.SaveChanges();
         }
 
+       IEnumerable<Vehiculo> IRepositorio_Vehiculo.GetAllVehiculos(){
+        return _applicationContext.vehiculo.Include(c => c.clientes);
 
+        }
 
-       
+       //IEnumerable<Vehiculo> IRepositorio_Vehiculo.GetVehiculo(int Idcliente){
+       //  return _applicationContext.vehiculo(p => p.Id_cliente == Idcliente );         
+       // } 
+
+      
+          
     }
 }

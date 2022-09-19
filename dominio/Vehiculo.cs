@@ -42,9 +42,11 @@ namespace dominio
         [ForeignKey("Tecnico")] 
         public int Id_tecnico { get; set;}
         
-        public ICollection<Cliente> ClienteLista {get;set;} 
+        public virtual Cliente clientes {get; set;} 
 
-        public ICollection<Tecnico> TecnicoLista {get;set;}
+        public virtual Tecnico tecnicos { get; set;}
+
+       
        
     }
 }

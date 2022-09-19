@@ -14,18 +14,18 @@
     <br>
     <table width="1200" border="0" cellspacing="2" cellpadding="1">
         <tr>
-            <th style="font-size:0.4cm;">ID</th>
-            <th style="font-size:0.4cm;">CIUDAD</th>
-            <th style="font-size:0.4cm;">FECHA DE INGRESO</th>
+            <th style="font-size:0.4cm;">Nombre</th>
+            <th style="font-size:0.4cm;">Apellidos</th>
+            <th style="font-size:0.4cm;"> Numero de Identificacion</th>
             <th></th>
             <th></th>
             <th></th>
         </tr>
         @foreach(var cliente in Model.Clientes){
             <tr>
-                <td>@cliente.Id_cliente</td>
-                <td>@cliente.Ciudad</td>
-                <td>@cliente.FechaIngreso</td>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Apellido</td>
+                <td>@cliente.Identificacion</td>
                 <td>
                 <a asp-page="./Detalles" asp-route-id="@cliente.Id_cliente"><button type="button" class="btn btn-info" style="font-size:0.4cm;">Detalles</button></a>   
                 </td>
@@ -34,6 +34,9 @@
                 </td>
                 <td>
                  <a asp-page="./Eliminar" asp-route-id="@cliente.Id_cliente"><button type="button" class="btn btn-danger" style="font-size:0.4cm;">Eliminar</button></a>   
+                </td>
+                <td>
+                 <a asp-page="../Vehiculos/Detalles" asp-route-id="@cliente.Id_cliente"><button type="button" class="btn btn-info" style="font-size:0.4cm;">Detalles del Vehiculo</button></a>   
                 </td>
             </tr>
         }

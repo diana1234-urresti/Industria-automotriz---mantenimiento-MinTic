@@ -14,18 +14,18 @@
     <br>
     <table width="1200" border="0" cellspacing="2" cellpadding="1">
         <tr>
-            <th style="font-size:0.4cm;">ID</th>
-            <th style="font-size:0.4cm;">SUELDO</th>
-            <th style="font-size:0.4cm;"></th>
+            <th style="font-size:0.4cm;">Nombre</th>
+            <th style="font-size:0.4cm;">Apellido</th>
+            <th style="font-size:0.4cm;">Numero de Indentificacion</th>
             <th></th>
             <th></th>
             <th></th>
         </tr>
         @foreach(var tecnico in Model.Tecnicos){
             <tr>
-                <td>@tecnico.Id_tecnico</td>
-                <td>@tecnico.Sueldo</td>
-                <td></td>
+                <td>@tecnico.Nombre</td>
+                <td>@tecnico.Apellido</td>
+                <td>@tecnico.Identificacion</td>
                 <td>
                 <a asp-page="./Detalles" asp-route-id="@tecnico.Id_tecnico"><button type="button" class="btn btn-info" style="font-size:0.4cm;">Detalles</button></a>   
                 </td>

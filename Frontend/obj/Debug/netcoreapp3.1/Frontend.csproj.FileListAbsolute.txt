@@ -225,3 +225,9 @@ C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimie
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\Detalles.cshtml.g.cs
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\Eliminar.cshtml.g.cs
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\listar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Clientes\DetallesVehiculo.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Actualizar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Crear.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Detalles.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Eliminar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\listar.cshtml.g.cs
