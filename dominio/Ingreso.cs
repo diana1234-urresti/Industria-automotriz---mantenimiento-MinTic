@@ -18,6 +18,8 @@ namespace dominio
 
         [Required(ErrorMessage="Ingrese el tipo de usuario")]
         public string TipoUsuario {get;set;}
+
+        
         
     }
 }
