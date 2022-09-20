@@ -34,6 +34,7 @@ namespace Frontend
             services.AddScoped<IRepositorio_Repuestos,Repositorio_Repuestos>();
             services.AddScoped<IRepositorio_Ingreso,Repositorio_Ingreso>();
             services.AddScoped<IRepositorio_Vehiculo,Repositorio_Vehiculo>();
+            services.AddScoped<IRepositorio_Repuestos,Repositorio_Repuestos>();
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(
               Configuration.GetConnectionString("DefaultConnection")
            ));

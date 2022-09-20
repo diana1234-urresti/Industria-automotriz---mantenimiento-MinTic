@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "PvW+NMTsAWYZEnschCJC5tu6CaTWIBfFvxTRA0p0/55piWpQm/UGXHIjJINJE6KEv+5fD0Y/h+VUo8JB3fsg2w==",
+=======
   "dgSpecHash": "NSHMPQp7zM1il6RcBzT0DUF41gdRg9E4uZyTI90gbjz9Z1ZeuyxuhMIFCdlluvKULaHIbh8Y+2cpxilSI6rpVA==",
+>>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
   "success": true,
   "projectFilePath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj",
   "expectedPackageFiles": [

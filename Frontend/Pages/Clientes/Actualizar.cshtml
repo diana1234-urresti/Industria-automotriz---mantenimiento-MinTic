@@ -9,6 +9,42 @@
    <form method="post">
     <table class="table-hover" width="600" height="300"  align="center" asp-validation-summary="ModelOnly" class="text-danger" >
     <tr>
+      <td width="260" style="font-size:0.4cm;">Nombre</td>
+      <td width="340">@Html.TextBoxFor(m => m.Clientes.Nombre)
+       <span asp-validation-for="Clientes.Nombre" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Apellidos</td>
+      <td width="340">@Html.TextBoxFor(m => m.Clientes.Apellido)
+       <span asp-validation-for="Clientes.Apellido" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Correo Electronico</td>
+      <td width="340">@Html.TextBoxFor(m => m.Clientes.Email)
+       <span asp-validation-for="Clientes.Email" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;">Fecha de Nacimiento</td>
+      <td width="340">@Html.TextBoxFor(m => m.Clientes.FechaN)
+       <span asp-validation-for="Clientes.FechaN" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td width="260" style="font-size:0.4cm;"> Numero de Identificacion</td>
+      <td width="340">@Html.TextBoxFor(m => m.Clientes.Identificacion)
+       <span asp-validation-for="Clientes.Identificacion" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+     <tr>
+      <td width="260" style="font-size:0.4cm;">Telefono</td>
+      <td width="340">@Html.TextBoxFor(m => m.Clientes.Telefono)
+       <span asp-validation-for="Clientes.Telefono" class="text-danger" style="font-size:0.4cm;"></span>
+      </td>
+    </tr>
+    <tr>
       <td width="260" style="font-size:0.4cm;">Ciudad</td>
       <td width="300"> @Html.TextBoxFor(m => m.Clientes.Ciudad)
        <span asp-validation-for="Clientes.Ciudad" class="text-danger" style="font-size:0.4cm;"></span>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace persistencia
 {
@@ -29,15 +30,22 @@ namespace persistencia
 
         }
 
+
         Cliente IRepositorio_cliente.Get(int Idcliente){
          return _applicationContext.cliente.FirstOrDefault(p=>p.Id_cliente==Idcliente);
-         
-
         } 
 
+        
         Cliente IRepositorio_cliente.Update(Cliente clientes){
          var ClienteEncontrado=_applicationContext.cliente.FirstOrDefault(p=>p.Id_cliente==clientes.Id_cliente);
          if (ClienteEncontrado!=null){
+            ClienteEncontrado.Nombre=clientes.Nombre;
+            ClienteEncontrado.Apellido=clientes.Apellido;
+            ClienteEncontrado.Direccion=clientes.Direccion;
+            ClienteEncontrado.Email=clientes.Email;
+            ClienteEncontrado.Identificacion=clientes.Identificacion;
+            ClienteEncontrado.FechaN=clientes.FechaN;
+            ClienteEncontrado.Telefono=clientes.Telefono;
             ClienteEncontrado.Ciudad=clientes.Ciudad;
             ClienteEncontrado.FechaIngreso=clientes.FechaIngreso;
              }

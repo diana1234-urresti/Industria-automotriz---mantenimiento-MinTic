@@ -225,6 +225,14 @@ C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimie
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\Detalles.cshtml.g.cs
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\Eliminar.cshtml.g.cs
 C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\listar.cshtml.g.cs
+<<<<<<< HEAD
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Clientes\DetallesVehiculo.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Actualizar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Crear.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Detalles.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Eliminar.cshtml.g.cs
+C:\Users\Solarte\Desktop\ciclo 3\proyectos\git\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\listar.cshtml.g.cs
+=======
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -348,3 +356,4 @@ C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDU
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Detalles.cshtml.g.cs
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Eliminar.cshtml.g.cs
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\listar.cshtml.g.cs
+>>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9

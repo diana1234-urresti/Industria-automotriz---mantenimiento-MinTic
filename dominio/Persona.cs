@@ -1,11 +1,14 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace dominio
 {
     public class Persona
     {
-        public int Id {get;set;}
+        [Key]
+        public int Id_persona {get;set;}
         [Required(ErrorMessage = "Ingrese Nombres")]
         [StringLength(50)]
         public string Nombre {get;set;}
