@@ -395,7 +395,7 @@ namespace persistencia.Migrations
                     b.Navigation("curso");
                 });
 
-<<<<<<< HEAD
+
             modelBuilder.Entity("dominio.Vehiculo", b =>
                 {
                     b.HasOne("dominio.Cliente", "clientes")
@@ -414,7 +414,6 @@ namespace persistencia.Migrations
             modelBuilder.Entity("dominio.Cliente", b =>
                 {
                     b.Navigation("VehiculoLista");
-=======
             modelBuilder.Entity("dominio.Revision", b =>
                 {
                     b.HasOne("dominio.Vehiculo", "Vehiculo")
@@ -431,7 +430,7 @@ namespace persistencia.Migrations
                         .HasForeignKey("VehiculoId_vehiculo");
 
                     b.Navigation("Vehiculo");
->>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
+
                 });
 
             modelBuilder.Entity("dominio.Curso", b =>
@@ -441,17 +440,17 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Tecnico", b =>
                 {
-<<<<<<< HEAD
+
                     b.Navigation("VehiculoLista");
-=======
+
                     b.Navigation("ClienteLista");
 
                     b.Navigation("RevisionLista");
 
                     b.Navigation("TecnicoLista");
->>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
+
                 });
 #pragma warning restore 612, 618
-        }
+        });
     }
-}
+}}

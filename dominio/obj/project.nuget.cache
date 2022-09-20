@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "OI1D/9xeEb6nnInT0v5Bqka65Edz+pjQuHm3Nvs9bxPz0ngv/37PHF+F3rXgKoQhcluQ0KiTZJl/2XPiKjvUgg==",
-=======
   "dgSpecHash": "pc7TX9QW/d5uvhHGHsnwXDCU2AtdhXTPZkM1e00fRax8uQfL963FpuBH/BDBZzzaCQDGeMVoQiSL1LIzFyF+rQ==",
->>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
   "success": true,
   "projectFilePath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
   "expectedPackageFiles": [
@@ -12,5 +8,12 @@
     "C:\\Users\\kdelg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\kdelg\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA\\Industria-automotriz---mantenimiento-MinTic\\dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -41,14 +41,11 @@ namespace dominio
 
         [ForeignKey("Tecnico")] 
         public int Id_tecnico { get; set;}
-<<<<<<< HEAD
         
         public virtual Cliente clientes {get; set;} 
 
         public virtual Tecnico tecnicos { get; set;}
 
-       
-=======
 
         [ForeignKey("Revision")]
         public int Id_revision{get;set;}
@@ -58,7 +55,7 @@ namespace dominio
         public ICollection<Tecnico> TecnicoLista  {get;set;}
 
         public ICollection<Revision> RevisionLista {get;set;}
->>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
+
        
     }
 }

@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "HioCzyOf+I/Ul7ZxTMddCGxhalecAy7PB72soMu3GaElM6FLCSBCcCcgyIahSywnPrW+XmEgP2ziNQ6S/E9BJg==",
-=======
   "dgSpecHash": "0+jbvnfwXOqnabcW+/X6jYiiCawcQ7qDqFnTbNAL/X3oOlOazYamWXeWcRV1OdO7jaVoG+YRssjU8zp2gNyONQ==",
->>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
   "success": true,
   "projectFilePath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj",
   "expectedPackageFiles": [
@@ -136,5 +132,12 @@
     "C:\\Users\\kdelg\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\kdelg\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -357,3 +357,4 @@ C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDU
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\Eliminar.cshtml.g.cs
 C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Repuestos\listar.cshtml.g.cs
 >>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
+C:\Users\kdelg\OneDrive\Documentos\MISION TIC 2022\3.DESARROLLO DE SOFTWARE\INDUSTRIA\Industria-automotriz---mantenimiento-MinTic\Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Clientes\DetallesVehiculo.cshtml.g.cs
