@@ -10,8 +10,8 @@ using persistencia;
 namespace persistencia.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20220917160038_personas_carrooo")]
-    partial class personas_carrooo
+    [Migration("20220920040558_personas_carros")]
+    partial class personas_carros
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,7 +28,20 @@ namespace persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<string>("Ciudad")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Direccion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -36,12 +49,25 @@ namespace persistencia.Migrations
                     b.Property<DateTime>("FechaIngreso")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("VehiculoId_vehiculo")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("FechaN")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Identificacion")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.HasKey("Id_cliente");
-
-                    b.HasIndex("VehiculoId_vehiculo");
 
                     b.ToTable("cliente");
                 });
@@ -77,7 +103,7 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Factura", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_factura")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -88,8 +114,8 @@ namespace persistencia.Migrations
                     b.Property<double>("CostoRevision")
                         .HasColumnType("float");
 
-                    b.Property<string>("FechaFacturacion")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("FechaFacturacion")
+                        .HasColumnType("datetime2");
 
                     b.Property<double>("Iva")
                         .HasColumnType("float");
@@ -97,35 +123,38 @@ namespace persistencia.Migrations
                     b.Property<double>("Total")
                         .HasColumnType("float");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id_factura");
 
                     b.ToTable("factura");
                 });
 
             modelBuilder.Entity("dominio.Ingreso", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_ingreso")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
                     b.Property<string>("Contraseña")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NameUsuario")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoUsuario")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id_ingreso");
 
                     b.ToTable("Ingreso");
                 });
 
             modelBuilder.Entity("dominio.Persona", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_persona")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -161,7 +190,7 @@ namespace persistencia.Migrations
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id_persona");
 
                     b.ToTable("persona");
                 });
@@ -211,13 +240,15 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Revision", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_revision")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
                     b.Property<string>("EstadoAceite")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("EstadoFiltro")
                         .HasColumnType("nvarchar(max)");
@@ -225,19 +256,25 @@ namespace persistencia.Migrations
                     b.Property<string>("FechaRevision")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NoPlaca")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("NoRevision")
                         .HasColumnType("int");
 
                     b.Property<string>("Repuesto")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("TipoMantenimiento")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("Id");
+                    b.Property<int?>("VehiculoId_vehiculo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_revision");
+
+                    b.HasIndex("VehiculoId_vehiculo");
 
                     b.ToTable("revision");
                 });
@@ -249,15 +286,41 @@ namespace persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Direccion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("FechaN")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Identificacion")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<double>("Sueldo")
                         .HasColumnType("float");
 
-                    b.Property<int?>("VehiculoId_vehiculo")
-                        .HasColumnType("int");
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.HasKey("Id_tecnico");
-
-                    b.HasIndex("VehiculoId_vehiculo");
 
                     b.ToTable("tecnico");
                 });
@@ -303,18 +366,19 @@ namespace persistencia.Migrations
                         .HasMaxLength(2000)
                         .HasColumnType("nvarchar(2000)");
 
+                    b.Property<int?>("clientesId_cliente")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("tecnicosId_tecnico")
+                        .HasColumnType("int");
+
                     b.HasKey("Id_vehiculo");
 
+                    b.HasIndex("clientesId_cliente");
+
+                    b.HasIndex("tecnicosId_tecnico");
+
                     b.ToTable("vehiculo");
-                });
-
-            modelBuilder.Entity("dominio.Cliente", b =>
-                {
-                    b.HasOne("dominio.Vehiculo", "Vehiculo")
-                        .WithMany("ClienteLista")
-                        .HasForeignKey("VehiculoId_vehiculo");
-
-                    b.Navigation("Vehiculo");
                 });
 
             modelBuilder.Entity("dominio.Precio", b =>
@@ -328,13 +392,33 @@ namespace persistencia.Migrations
                     b.Navigation("curso");
                 });
 
-            modelBuilder.Entity("dominio.Tecnico", b =>
+            modelBuilder.Entity("dominio.Revision", b =>
                 {
                     b.HasOne("dominio.Vehiculo", "Vehiculo")
-                        .WithMany("TecnicoLista")
+                        .WithMany()
                         .HasForeignKey("VehiculoId_vehiculo");
 
                     b.Navigation("Vehiculo");
+                });
+
+            modelBuilder.Entity("dominio.Vehiculo", b =>
+                {
+                    b.HasOne("dominio.Cliente", "clientes")
+                        .WithMany("VehiculoLista")
+                        .HasForeignKey("clientesId_cliente");
+
+                    b.HasOne("dominio.Tecnico", "tecnicos")
+                        .WithMany("VehiculoLista")
+                        .HasForeignKey("tecnicosId_tecnico");
+
+                    b.Navigation("clientes");
+
+                    b.Navigation("tecnicos");
+                });
+
+            modelBuilder.Entity("dominio.Cliente", b =>
+                {
+                    b.Navigation("VehiculoLista");
                 });
 
             modelBuilder.Entity("dominio.Curso", b =>
@@ -342,11 +426,9 @@ namespace persistencia.Migrations
                     b.Navigation("Precio");
                 });
 
-            modelBuilder.Entity("dominio.Vehiculo", b =>
+            modelBuilder.Entity("dominio.Tecnico", b =>
                 {
-                    b.Navigation("ClienteLista");
-
-                    b.Navigation("TecnicoLista");
+                    b.Navigation("VehiculoLista");
                 });
 #pragma warning restore 612, 618
         }

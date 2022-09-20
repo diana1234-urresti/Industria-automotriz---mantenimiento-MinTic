@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace persistencia.Migrations
 {
-    public partial class github : Migration
+    public partial class personas_carros : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

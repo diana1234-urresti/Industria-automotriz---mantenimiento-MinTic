@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OI1D/9xeEb6nnInT0v5Bqka65Edz+pjQuHm3Nvs9bxPz0ngv/37PHF+F3rXgKoQhcluQ0KiTZJl/2XPiKjvUgg==",
+  "dgSpecHash": "V6oV+ImEn7vwxva9ooDi+sEk1Kbx/LqElQ1CIN/vqMQ6Q7ZP4c7Raf7ECvnzrs3Au+TAhMqVhIC5wgfYwC1Neg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
+  "projectFilePath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Solarte\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Solarte\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Solarte\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\kdelg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\kdelg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\kdelg\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
