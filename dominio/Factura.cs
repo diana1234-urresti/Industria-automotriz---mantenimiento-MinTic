@@ -23,6 +23,6 @@ namespace dominio
         
         [Required(ErrorMessage="Ingrese el valor TOTAL")]
         public double Total{get;set;}
-        
+        //gfggg
     }
 }
