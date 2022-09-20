@@ -101,7 +101,7 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Factura", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_factura")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -121,14 +121,14 @@ namespace persistencia.Migrations
                     b.Property<double>("Total")
                         .HasColumnType("float");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id_factura");
 
                     b.ToTable("factura");
                 });
 
             modelBuilder.Entity("dominio.Ingreso", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Id_ingreso")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -145,7 +145,7 @@ namespace persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id_ingreso");
 
                     b.ToTable("Ingreso");
                 });
@@ -249,12 +249,10 @@ namespace persistencia.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("EstadoFiltro")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaRevision")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("FechaRevision")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("NoRevision")
                         .HasColumnType("int");
@@ -338,9 +336,6 @@ namespace persistencia.Migrations
                     b.Property<int>("Id_cliente")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id_revision")
-                        .HasColumnType("int");
-
                     b.Property<int>("Id_tecnico")
                         .HasColumnType("int");
 
@@ -395,6 +390,14 @@ namespace persistencia.Migrations
                     b.Navigation("curso");
                 });
 
+            modelBuilder.Entity("dominio.Revision", b =>
+                {
+                    b.HasOne("dominio.Vehiculo", "Vehiculo")
+                        .WithMany()
+                        .HasForeignKey("VehiculoId_vehiculo");
+
+                    b.Navigation("Vehiculo");
+                });
 
             modelBuilder.Entity("dominio.Vehiculo", b =>
                 {
@@ -414,23 +417,6 @@ namespace persistencia.Migrations
             modelBuilder.Entity("dominio.Cliente", b =>
                 {
                     b.Navigation("VehiculoLista");
-            modelBuilder.Entity("dominio.Revision", b =>
-                {
-                    b.HasOne("dominio.Vehiculo", "Vehiculo")
-                        .WithMany("RevisionLista")
-                        .HasForeignKey("VehiculoId_vehiculo");
-
-                    b.Navigation("Vehiculo");
-                });
-
-            modelBuilder.Entity("dominio.Tecnico", b =>
-                {
-                    b.HasOne("dominio.Vehiculo", "Vehiculo")
-                        .WithMany("TecnicoLista")
-                        .HasForeignKey("VehiculoId_vehiculo");
-
-                    b.Navigation("Vehiculo");
-
                 });
 
             modelBuilder.Entity("dominio.Curso", b =>
@@ -440,17 +426,9 @@ namespace persistencia.Migrations
 
             modelBuilder.Entity("dominio.Tecnico", b =>
                 {
-
                     b.Navigation("VehiculoLista");
-
-                    b.Navigation("ClienteLista");
-
-                    b.Navigation("RevisionLista");
-
-                    b.Navigation("TecnicoLista");
-
                 });
 #pragma warning restore 612, 618
-        });
+        }
     }
-}}
+}

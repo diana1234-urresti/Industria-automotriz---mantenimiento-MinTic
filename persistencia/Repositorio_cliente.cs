@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -61,7 +62,11 @@ namespace persistencia
         _applicationContext.Remove(ClienteEncontrado);
         _applicationContext.SaveChanges();
         }
+         
 
+      //  IEnumerable<Vehiculo> IRepositorio_cliente.GetAllVehiculos(){
+      //  return _applicationContext.cliente.Include(c => c.VehiculoLista);
+      //   }
 
 
        

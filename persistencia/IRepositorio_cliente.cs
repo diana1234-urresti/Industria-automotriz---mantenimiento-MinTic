@@ -13,5 +13,6 @@ namespace persistencia
         Cliente Update (Cliente clientes);
         void Delete (int Id_cliente);
         Cliente Get(int Idcliente); 
+        //IEnumerable<Vehiculo> GetAllVehiculos();
      }
 }

@@ -20,16 +20,8 @@ namespace dominio
         [Required(ErrorMessage = "Ingrese Tipo de mantenimiento")]
         [StringLength(50)]
         public string TipoMantenimiento {get;set;}
-
-        
-
-        
-        [Required(ErrorMessage = "Fecha de Revision Obligatoria")]
-        public DateTime FechaRevision {get;set;}
-
-        [Required(ErrorMessage = "Ingrese el Estado del Filtro")]
-        [StringLength(50)]
-
+       
+        public string FechaRevision {get;set;}
         public string EstadoFiltro {get;set;}
 
         [Required(ErrorMessage = "Ingrese el Repuesto")]

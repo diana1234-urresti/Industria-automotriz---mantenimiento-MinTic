@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using dominio;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace persistencia
 {
     public class ApplicationContext: DbContext
     {
-        private const string connectionString = @"Data Source=localhost;Initial Catalog=Mantenimiento_Tic;Integrated Security=True;";
+        private const string connectionString = @"Data Source=localhost\sqlexpress;Initial Catalog=Mantenimiento_Tic;Integrated Security=True;";
         public DbSet<Cliente> cliente {get; set;}
         public DbSet<Factura> factura {get; set;}
         public DbSet<Ingreso> ingresos {get; set;}
@@ -30,6 +34,14 @@ namespace persistencia
     {
         optionsBuilder.UseSqlServer(connectionString);
     }
+     
+    /*   protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Vehiculo>()
+            .HasOne(c => c.cliente)
+            .WithMany(v => v.vehiculo);
+    }*/
+
 
     }
 }

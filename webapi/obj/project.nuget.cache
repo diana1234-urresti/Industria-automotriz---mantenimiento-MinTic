@@ -1,12 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "O2gdoJGH0KI0ZGYfeR71VIz8OCn7L6s7NKDehb1lDqNirfRHlWQG12pQqc/Yp/DC7Qa5c7I6Rsp76SLmS8Gj0g==",
-=======
-  "dgSpecHash": "wGWLTwUvMmS3dn2ZStmYe5km4mrkwTa7YznKR/lk8/MEMEUqNCBG1N3ay4BRjR5qcunK7Sw4kkXBiKW3YWl6uw==",
->>>>>>> d2039e19d1d1f959a1548cd10f95085bf5d63ce9
   "success": true,
-  "projectFilePath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA\\Industria-automotriz---mantenimiento-MinTic\\webapi\\webapi.csproj",
+  "projectFilePath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\webapi\\webapi.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\webapi\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

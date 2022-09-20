@@ -14,7 +14,6 @@ namespace persistencia
         Vehiculo Update(Vehiculo vehiculo);
         void Delete (int Id_vehiculo);
         Vehiculo Get(int vehiculo); 
-        IEnumerable<Vehiculo> GetAllVehiculos();
        // IEnumerable<Vehiculo> GetVehiculo(int Idcliente);
 
     }

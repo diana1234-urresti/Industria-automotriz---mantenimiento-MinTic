@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -38,8 +39,8 @@ namespace dominio
         public string Ciudad {get;set;}
 
         [Required(ErrorMessage = "Fecha de Ingreso Obligatorio")]
+        
         public DateTime FechaIngreso {get;set;}
-
 
         public ICollection<Vehiculo> VehiculoLista {get;set;}
         
