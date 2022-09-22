@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj": {}
+    "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj": {
+    "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
         "projectName": "dominio",
-        "projectPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
-        "packagesPath": "C:\\Users\\kdelg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\obj\\",
+        "projectPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj",
+        "packagesPath": "C:\\Users\\Solarte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kdelg\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Solarte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -57,21 +57,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.422\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj": {
+    "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj",
         "projectName": "Frontend",
-        "projectPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj",
-        "packagesPath": "C:\\Users\\kdelg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\obj\\",
+        "projectPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\Frontend.csproj",
+        "packagesPath": "C:\\Users\\Solarte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kdelg\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Solarte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -82,11 +82,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj": {
-                "projectPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj"
+              "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj": {
+                "projectPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj"
               },
-              "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj": {
-                "projectPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj"
+              "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj": {
+                "projectPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj"
               }
             }
           }
@@ -100,11 +100,27 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -125,21 +141,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.422\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj": {
+    "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj",
         "projectName": "persistencia",
-        "projectPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj",
-        "packagesPath": "C:\\Users\\kdelg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\obj\\",
+        "projectPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\persistencia.csproj",
+        "packagesPath": "C:\\Users\\Solarte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kdelg\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Solarte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -150,8 +166,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj": {
-                "projectPath": "C:\\Users\\kdelg\\OneDrive\\Documentos\\MISION TIC 2022\\3.DESARROLLO DE SOFTWARE\\INDUSTRIA-II\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj"
+              "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj": {
+                "projectPath": "C:\\Users\\Solarte\\Desktop\\ciclo 3\\proyectos\\git\\Industria-automotriz---mantenimiento-MinTic\\dominio\\dominio.csproj"
               }
             }
           }
@@ -201,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.422\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     }

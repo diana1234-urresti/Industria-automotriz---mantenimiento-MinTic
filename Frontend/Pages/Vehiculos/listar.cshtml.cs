@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using dominio;
 using persistencia;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyApp.Namespace
 {
+    [Authorize]
     public class listarvehiculoModel : PageModel
     {
         private readonly IRepositorio_Vehiculo _repo_vehiculos;

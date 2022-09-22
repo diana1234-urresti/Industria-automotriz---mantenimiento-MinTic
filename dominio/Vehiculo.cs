@@ -42,9 +42,9 @@ namespace dominio
         [ForeignKey("Tecnico")] 
         public int Id_tecnico { get; set;}
         
-        public virtual Cliente clientes {get; set;} 
+        public Cliente clientes {get; set;} 
 
-        public virtual Tecnico tecnicos { get; set;}
+        public Tecnico tecnicos { get; set;}
 
        
        

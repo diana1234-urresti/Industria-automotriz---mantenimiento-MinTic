@@ -6,11 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using dominio;
 using persistencia;
+using Microsoft.AspNetCore.Authorization;
+
 
 
 
 namespace MyApp.Namespace
 {
+    [Authorize]
     public class ListarFacturaModel : PageModel
     {
         private readonly IRepositorio_Factura _repo_Factura;

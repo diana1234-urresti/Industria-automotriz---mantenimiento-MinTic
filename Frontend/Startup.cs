@@ -26,6 +26,7 @@ namespace Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllersWithViews();
             services.AddScoped<IRepositorio_Personas,Repositorio_Personas>();
             services.AddScoped<IRepositorio_tecnico,Repositorio_tecnicos>();
             services.AddScoped<IRepositorio_cliente,Repositorio_cliente>();
@@ -36,7 +37,7 @@ namespace Frontend
             services.AddScoped<IRepositorio_Vehiculo,Repositorio_Vehiculo>();
             services.AddScoped<IRepositorio_Repuestos,Repositorio_Repuestos>();
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(
-              Configuration.GetConnectionString("DefaultConnection")
+             Configuration.GetConnectionString("DefaultConnection")
            ));
         }
 
@@ -58,7 +59,7 @@ namespace Frontend
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

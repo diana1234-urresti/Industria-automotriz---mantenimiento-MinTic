@@ -6,12 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using dominio;
 using persistencia;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace MyApp.Namespace
-{
+{ 
+    [Authorize]
     public class ActualizarRevisionModel : PageModel
-    {
+    {   
         private readonly IRepositorio_Revisiones _repo_Revision;
 
         public Revision Revisiones {get;set;}

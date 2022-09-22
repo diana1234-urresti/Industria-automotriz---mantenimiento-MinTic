@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using dominio;
 using persistencia;
+using Microsoft.AspNetCore.Authorization;
 
 
 
 namespace MyApp.Namespace
 {
+    [Authorize]
     public class ListarIngresoModel : PageModel
     {
         private readonly IRepositorio_Ingreso _repo_Ingreso;
